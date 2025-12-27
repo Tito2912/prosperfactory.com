@@ -32,4 +32,68 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/"/>
   </url>
+  <url>
+    <loc>https://prosperfactory.com/legal-notice</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/mentions-legales"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/fr/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/mentions-legales"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/es/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/mentions-legales"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/de/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/mentions-legales"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/politique-de-confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/politica-de-confidencialidad"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/datenschutzerklaerung"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/fr/politique-de-confidentialite</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/politique-de-confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/politica-de-confidencialidad"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/datenschutzerklaerung"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/es/politica-de-confidencialidad</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/politique-de-confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/politica-de-confidencialidad"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/datenschutzerklaerung"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/de/datenschutzerklaerung</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/politique-de-confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/politica-de-confidencialidad"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/datenschutzerklaerung"/>
+  </url>
 </urlset>

@@ -1,10 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Merci pour votre achat chez Prosper Factory. T&eacute;l&eacute;chargez le Manuel Strat&eacute;gique&trade;, suivez les prochaines &eacute;tapes et retrouvez tous les liens de support et de facturation.">
+  <meta name="description" content="Merci pour votre achat chez Prosper Factory. Téléchargez le Manuel Stratégique™ et retrouvez vos liens de support et de facturation.">
   <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+  <link rel="canonical" href="https://prosperfactory.com/fr/merci.html">
+  <link rel="alternate" hreflang="en" href="https://prosperfactory.com/thankyou.html">
+  <link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/merci.html">
+  <link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/gracias.html">
+  <link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/danke.html">
+  <link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/thankyou.html">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="bingbot" content="noindex, nofollow">
+  <meta property="og:title" content="Merci — Les 7 lois financi&egrave;res | Prosper Factory">
+  <meta property="og:description" content="Acc&eacute;dez au Manuel Strat&eacute;gique, &agrave; vos bonus et aux liens de support suite &agrave; votre commande Prosper Factory.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://prosperfactory.com/fr/merci.html">
+  <meta property="og:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png">
+  <meta property="og:image:alt" content="Couverture du Manuel Strat&eacute;gique">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Merci — Les 7 lois financi&egrave;res | Prosper Factory">
+  <meta name="twitter:description" content="Acc&eacute;dez au Manuel Strat&eacute;gique, &agrave; vos bonus et aux liens de support suite &agrave; votre commande Prosper Factory.">
+  <meta name="twitter:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png">
   <title>Merci &ndash; Manuel Strat&eacute;gique</title>
   <style>
     :root {
@@ -110,11 +129,44 @@
     <p>
       Votre paiement est confirm&eacute;. Cliquez sur le bouton pour t&eacute;l&eacute;charger le Manuel Strat&eacute;gique&trade;
       <strong>Les 7 lois financi&egrave;res que les ultra-riches ne partagent jamais</strong> (PDF de 32 pages).
-      Le lien reste actif afin que vous puissiez y revenir &agrave; tout moment.
+      Conservez le lien de confirmation Stripe&nbsp;: il contient un jeton s&eacute;curis&eacute; n&eacute;cessaire pour retrouver votre t&eacute;l&eacute;chargement plus tard.
     </p>
-    <a class="button" href="../7%20lois%20financi%C3%A8res%20que%20les%20ultra-riches%20ne%20partagent%20jamais-FR.pdf" download>
+    <a class="button" id="download-button" href="#" aria-disabled="true">
       T&eacute;l&eacute;charger le PDF en fran&ccedil;ais
     </a>
+    <p id="download-warning" style="margin-top:12px;color:var(--muted);">
+      T&eacute;l&eacute;chargement verrouill&eacute;. Acc&eacute;dez &agrave; cette page via le lien de confirmation Stripe apr&egrave;s paiement.
+    </p>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var sessionId = params.get("session_id");
+        var button = document.getElementById("download-button");
+        var warning = document.getElementById("download-warning");
+
+        if (!button) return;
+
+        function setDisabled() {
+          button.setAttribute("aria-disabled", "true");
+          button.style.pointerEvents = "none";
+          button.style.opacity = "0.6";
+          if (warning) warning.style.display = "block";
+        }
+
+        if (!sessionId) {
+          setDisabled();
+          return;
+        }
+
+        button.href =
+          "/.netlify/functions/download?lang=fr&session_id=" +
+          encodeURIComponent(sessionId);
+        button.setAttribute("aria-disabled", "false");
+        button.style.pointerEvents = "auto";
+        button.style.opacity = "1";
+        if (warning) warning.style.display = "none";
+      })();
+    </script>
     <section class="steps" aria-labelledby="etapes-suivantes">
       <h2 id="etapes-suivantes">Vos prochaines &eacute;tapes</h2>
       <ol>
@@ -142,4 +194,3 @@
   </main>
 </body>
 </html>
-

@@ -25,6 +25,14 @@ PAGES = [
     "https://prosperfactory.com/fr/",
     "https://prosperfactory.com/es/",
     "https://prosperfactory.com/de/",
+    "https://prosperfactory.com/legal-notice",
+    "https://prosperfactory.com/privacy-policy",
+    "https://prosperfactory.com/fr/mentions-legales",
+    "https://prosperfactory.com/fr/politique-de-confidentialite",
+    "https://prosperfactory.com/es/mentions-legales",
+    "https://prosperfactory.com/es/politica-de-confidencialidad",
+    "https://prosperfactory.com/de/mentions-legales",
+    "https://prosperfactory.com/de/datenschutzerklaerung",
 ]
 
 

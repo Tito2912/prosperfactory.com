@@ -1,6 +1,44 @@
+http://www.prosperfactory.com/fr  https://prosperfactory.com/fr/  301!
+http://www.prosperfactory.com/es  https://prosperfactory.com/es/  301!
+http://www.prosperfactory.com/de  https://prosperfactory.com/de/  301!
+http://www.prosperfactory.com/*  https://prosperfactory.com/:splat  301!
+http://prosperfactory.com/*  https://prosperfactory.com/:splat  301!
+https://www.prosperfactory.com/fr  https://prosperfactory.com/fr/  301!
+https://www.prosperfactory.com/es  https://prosperfactory.com/es/  301!
+https://www.prosperfactory.com/de  https://prosperfactory.com/de/  301!
+https://www.prosperfactory.com/*  https://prosperfactory.com/:splat  301!
+
+/7%20Financial%20Laws%20the%20Ultra-Rich%20Never%20Share-EN.pdf  /payment  302!
+/7%20lois%20financi%C3%A8res%20que%20les%20ultra-riches%20ne%20partagent%20jamais-FR.pdf  /fr/paiement  302!
+/7%20leyes%20financieras%20que%20los%20ultra%20ricos%20nunca%20comparten-ES.pdf  /es/pago  302!
+/7%20Finanzgesetze,%20die%20die%20Superreichen%20niemals%20weitergeben-DE.pdf  /de/zahlung  302!
+/7%20Finanzgesetze%2C%20die%20die%20Superreichen%20niemals%20weitergeben-DE.pdf  /de/zahlung  302!
+
+/legal-notice.html  /legal-notice  301!
+/privacy-policy.html  /privacy-policy  301!
+/fr/mentions-legales.html  /fr/mentions-legales  301!
+/fr/politique-de-confidentialite.html  /fr/politique-de-confidentialite  301!
+/es/mentions-legales.html  /es/mentions-legales  301!
+/es/politica-de-confidencialidad.html  /es/politica-de-confidencialidad  301!
+/de/mentions-legales.html  /de/mentions-legales  301!
+/de/datenschutzerklaerung.html  /de/datenschutzerklaerung  301!
+
 /fr  /fr/index.html  200
 /es  /es/index.html  200
 /de  /de/index.html  200
-http://prosperfactory.com/*  https://prosperfactory.com/:splat  301!
-http://www.prosperfactory.com/*  https://prosperfactory.com/:splat  301!
-https://www.prosperfactory.com/*  /:splat  200!
+/privacy-policy  /privacy-policy.html  200
+/legal-notice  /legal-notice.html  200
+/fr/politique-de-confidentialite  /fr/politique-de-confidentialite.html  200
+/fr/mentions-legales  /fr/mentions-legales.html  200
+/es/politica-de-confidencialidad  /es/politica-de-confidencialidad.html  200
+/es/mentions-legales  /es/mentions-legales.html  200
+/de/datenschutzerklaerung  /de/datenschutzerklaerung.html  200
+/de/mentions-legales  /de/mentions-legales.html  200
+/thankyou  /thankyou.html  200
+/payment  /payment.html  200
+/fr/merci  /fr/merci.html  200
+/fr/paiement  /fr/paiement.html  200
+/es/gracias  /es/gracias.html  200
+/es/pago  /es/pago.html  200
+/de/danke  /de/danke.html  200
+/de/zahlung  /de/zahlung.html  200

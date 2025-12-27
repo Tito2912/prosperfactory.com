@@ -1,10 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Danke f&uuml;r deinen Kauf bei Prosper Factory. Lade das Strategische Handbuch&trade; herunter, erfahre mehr &uuml;ber Updates und behalte alle Support-Kontakte im Blick.">
+  <meta name="description" content="Danke für deinen Kauf bei Prosper Factory. Lade das Strategische Handbuch™ herunter und behalte Support- und Update-Infos griffbereit.">
   <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+  <link rel="canonical" href="https://prosperfactory.com/de/danke.html">
+  <link rel="alternate" hreflang="en" href="https://prosperfactory.com/thankyou.html">
+  <link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/merci.html">
+  <link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/gracias.html">
+  <link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/danke.html">
+  <link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/thankyou.html">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="bingbot" content="noindex, nofollow">
+  <meta property="og:title" content="Danke — Die 7 Finanzgesetze | Prosper Factory">
+  <meta property="og:description" content="Greife auf das Strategische Handbuch, deine Boni und Support-Links nach deiner Prosper Factory Bestellung zu.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://prosperfactory.com/de/danke.html">
+  <meta property="og:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png">
+  <meta property="og:image:alt" content="Titelbild des Strategischen Handbuchs">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Danke — Die 7 Finanzgesetze | Prosper Factory">
+  <meta name="twitter:description" content="Greife auf das Strategische Handbuch, deine Boni und Support-Links nach deiner Prosper Factory Bestellung zu.">
+  <meta name="twitter:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png">
   <title>Danke &ndash; Die 7 Finanzgesetze</title>
   <style>
     :root {
@@ -110,11 +129,44 @@
     <p>
       Die Zahlung ist best&auml;tigt. Klicke auf den Button, um das Strategische Handbuch&trade;
       <strong>Die 7 Finanzgesetze, die die Superreichen niemals teilen</strong> (PDF, 32 Seiten) herunterzuladen.
-      Der Download-Link bleibt aktiv, sodass du jederzeit erneut Zugriff erh&auml;ltst.
+      Bewahre den Stripe-Best&auml;tigungslink auf &mdash; er enth&auml;lt ein sicheres Token, das du f&uuml;r den erneuten Zugriff ben&ouml;tigst.
     </p>
-    <a class="button" href="../7%20Finanzgesetze,%20die%20die%20Superreichen%20niemals%20weitergeben-DE.pdf" download>
+    <a class="button" id="download-button" href="#" aria-disabled="true">
       PDF auf Deutsch herunterladen
     </a>
+    <p id="download-warning" style="margin-top:12px;color:var(--muted);">
+      Download gesperrt. Bitte &ouml;ffne diese Seite &uuml;ber den Stripe-Best&auml;tigungslink nach dem Kauf.
+    </p>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var sessionId = params.get("session_id");
+        var button = document.getElementById("download-button");
+        var warning = document.getElementById("download-warning");
+
+        if (!button) return;
+
+        function setDisabled() {
+          button.setAttribute("aria-disabled", "true");
+          button.style.pointerEvents = "none";
+          button.style.opacity = "0.6";
+          if (warning) warning.style.display = "block";
+        }
+
+        if (!sessionId) {
+          setDisabled();
+          return;
+        }
+
+        button.href =
+          "/.netlify/functions/download?lang=de&session_id=" +
+          encodeURIComponent(sessionId);
+        button.setAttribute("aria-disabled", "false");
+        button.style.pointerEvents = "auto";
+        button.style.opacity = "1";
+        if (warning) warning.style.display = "none";
+      })();
+    </script>
     <section class="steps" aria-labelledby="download-schritte">
       <h2 id="download-schritte">So geht es jetzt weiter</h2>
       <ol>
@@ -142,4 +194,3 @@
   </main>
 </body>
 </html>
-

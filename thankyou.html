@@ -1,10 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Thank you for your Prosper Factory order. Download the Strategic Playbook&trade;, review the next steps, and keep every support contact handy.">
   <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
+  <link rel="canonical" href="https://prosperfactory.com/thankyou.html">
+  <link rel="alternate" hreflang="en" href="https://prosperfactory.com/thankyou.html">
+  <link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/merci.html">
+  <link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/gracias.html">
+  <link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/danke.html">
+  <link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/thankyou.html">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="bingbot" content="noindex, nofollow">
+  <meta property="og:title" content="Thank you — The 7 Financial Laws | Prosper Factory">
+  <meta property="og:description" content="Access your Prosper Factory Strategic Playbook, bonuses, and next steps after a successful order.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://prosperfactory.com/thankyou.html">
+  <meta property="og:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png">
+  <meta property="og:image:alt" content="Strategic Playbook cover">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thank you — The 7 Financial Laws | Prosper Factory">
+  <meta name="twitter:description" content="Access your Prosper Factory Strategic Playbook, bonuses, and next steps after a successful order.">
+  <meta name="twitter:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png">
   <title>Thanks &ndash; The 7 Financial Laws</title>
   <style>
     :root {
@@ -110,11 +129,44 @@
     <p>
       Your payment is confirmed. Use the button below to download the Strategic Playbook&trade;
       <strong>The 7 Financial Laws the Ultra-Rich Never Share</strong> (32-page PDF).
-      This link stays active so you can return and retrieve the file whenever you need it.
+      Keep the Stripe confirmation link &mdash; it contains a secure token you will need to access your download again.
     </p>
-    <a class="button" href="7%20Financial%20Laws%20the%20Ultra-Rich%20Never%20Share-EN.pdf" download>
+    <a class="button" id="download-button" href="#" aria-disabled="true">
       Download the English PDF
     </a>
+    <p id="download-warning" style="margin-top:12px;color:var(--muted);">
+      Download locked. Please access this page from the Stripe confirmation link after payment.
+    </p>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var sessionId = params.get("session_id");
+        var button = document.getElementById("download-button");
+        var warning = document.getElementById("download-warning");
+
+        if (!button) return;
+
+        function setDisabled() {
+          button.setAttribute("aria-disabled", "true");
+          button.style.pointerEvents = "none";
+          button.style.opacity = "0.6";
+          if (warning) warning.style.display = "block";
+        }
+
+        if (!sessionId) {
+          setDisabled();
+          return;
+        }
+
+        button.href =
+          "/.netlify/functions/download?lang=en&session_id=" +
+          encodeURIComponent(sessionId);
+        button.setAttribute("aria-disabled", "false");
+        button.style.pointerEvents = "auto";
+        button.style.opacity = "1";
+        if (warning) warning.style.display = "none";
+      })();
+    </script>
     <section class="steps" aria-labelledby="next-steps">
       <h2 id="next-steps">What happens next</h2>
       <ol>
@@ -126,7 +178,7 @@
     <section class="next-steps" aria-labelledby="returning-customers">
       <h2 id="returning-customers">For returning customers</h2>
       <p>If you need to update your payment method or unlock additional bundles, use the secure checkout at <a href="payment.html">prosperfactory.com/payment</a>. Any future bonus drops will be announced there as well.</p>
-      <p>Francophone members can reopen the <a href="fr/merci.html">French download hub</a> or keep a direct copy of the manual via <a href="7%20lois%20financi%C3%A8res%20que%20les%20ultra-riches%20ne%20partagent%20jamais-FR.pdf" download>the French PDF</a>.</p>
+      <p>Francophone members can reopen the <a href="fr/merci.html">French download hub</a>.</p>
       <p>The <a href="index.html">Prosper Factory homepage</a> also highlights new modules for the Strategic Playbook&trade;. Checking it regularly ensures you never miss improvements.</p>
       <p>If the download does not start automatically, right-click the button above and choose &ldquo;Save link as&rdquo;. The same approach works on desktop and mobile browsers.</p>
     </section>
@@ -143,4 +195,3 @@
   </main>
 </body>
 </html>
-

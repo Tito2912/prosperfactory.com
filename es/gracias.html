@@ -1,10 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Gracias por tu compra en Prosper Factory. Descarga el Manual Estrat&eacute;gico&trade;, revisa los siguientes pasos y conserva todos los datos de soporte y facturaci&oacute;n.">
+  <meta name="description" content="Gracias por tu compra en Prosper Factory. Descarga el Manual Estratégico™ y guarda a mano los enlaces de soporte y facturación.">
   <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+  <link rel="canonical" href="https://prosperfactory.com/es/gracias.html">
+  <link rel="alternate" hreflang="en" href="https://prosperfactory.com/thankyou.html">
+  <link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/merci.html">
+  <link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/gracias.html">
+  <link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/danke.html">
+  <link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/thankyou.html">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="bingbot" content="noindex, nofollow">
+  <meta property="og:title" content="Gracias — Las 7 leyes financieras | Prosper Factory">
+  <meta property="og:description" content="Accede al Manual Estrat&eacute;gico, a tus bonos y a los enlaces de soporte tras tu compra Prosper Factory.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://prosperfactory.com/es/gracias.html">
+  <meta property="og:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png">
+  <meta property="og:image:alt" content="Portada del Manual Estrat&eacute;gico">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gracias — Las 7 leyes financieras | Prosper Factory">
+  <meta name="twitter:description" content="Accede al Manual Estrat&eacute;gico, a tus bonos y a los enlaces de soporte tras tu compra Prosper Factory.">
+  <meta name="twitter:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png">
   <title>Gracias &ndash; Las 7 leyes financieras</title>
   <style>
     :root {
@@ -110,11 +129,44 @@
     <p>
       Tu pago est&aacute; confirmado. Haz clic en el bot&oacute;n para descargar el Manual Estrat&eacute;gico&trade;
       <strong>Las 7 leyes financieras que los ultra ricos nunca comparten</strong> (PDF de 32 p&aacute;ginas).
-      El enlace permanece activo para que puedas volver a acceder cuando lo necesites.
+      Conserva el enlace de confirmaci&oacute;n de Stripe: contiene un token seguro necesario para acceder a tu descarga m&aacute;s adelante.
     </p>
-    <a class="button" href="../7%20leyes%20financieras%20que%20los%20ultra%20ricos%20nunca%20comparten-ES.pdf" download>
+    <a class="button" id="download-button" href="#" aria-disabled="true">
       Descargar el PDF en espa&ntilde;ol
     </a>
+    <p id="download-warning" style="margin-top:12px;color:var(--muted);">
+      Descarga bloqueada. Accede a esta p&aacute;gina desde el enlace de confirmaci&oacute;n de Stripe despu&eacute;s del pago.
+    </p>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var sessionId = params.get("session_id");
+        var button = document.getElementById("download-button");
+        var warning = document.getElementById("download-warning");
+
+        if (!button) return;
+
+        function setDisabled() {
+          button.setAttribute("aria-disabled", "true");
+          button.style.pointerEvents = "none";
+          button.style.opacity = "0.6";
+          if (warning) warning.style.display = "block";
+        }
+
+        if (!sessionId) {
+          setDisabled();
+          return;
+        }
+
+        button.href =
+          "/.netlify/functions/download?lang=es&session_id=" +
+          encodeURIComponent(sessionId);
+        button.setAttribute("aria-disabled", "false");
+        button.style.pointerEvents = "auto";
+        button.style.opacity = "1";
+        if (warning) warning.style.display = "none";
+      })();
+    </script>
     <section class="steps" aria-labelledby="pasos-siguientes">
       <h2 id="pasos-siguientes">Pasos recomendados</h2>
       <ol>
@@ -142,4 +194,3 @@
   </main>
 </body>
 </html>
-

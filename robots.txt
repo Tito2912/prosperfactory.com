@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://prosperfactory.com/sitemap.xml

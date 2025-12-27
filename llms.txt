@@ -1,0 +1,17 @@
+# LLM Access Policy for prosperfactory.com
+
+**Last updated:** 2025-11-04  
+**Contact:** support@prosperfactory.com
+
+This document defines crawl directives for large language model agents.
+
+```
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+```

@@ -1,0 +1,6 @@
+/fr  /fr/index.html  200
+/es  /es/index.html  200
+/de  /de/index.html  200
+http://prosperfactory.com/*  https://prosperfactory.com/:splat  301!
+http://www.prosperfactory.com/*  https://prosperfactory.com/:splat  301!
+https://www.prosperfactory.com/*  /:splat  200!

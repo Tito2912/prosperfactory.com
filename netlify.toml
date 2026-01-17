@@ -35,46 +35,46 @@
   for = "/payment*"
   [headers.values]
     Cache-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive"
+    X-Robots-Tag = "noindex, follow, noarchive"
 
 [[headers]]
   for = "/thankyou*"
   [headers.values]
     Cache-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive"
+    X-Robots-Tag = "noindex, follow, noarchive"
 
 [[headers]]
   for = "/fr/paiement*"
   [headers.values]
     Cache-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive"
+    X-Robots-Tag = "noindex, follow, noarchive"
 
 [[headers]]
   for = "/fr/merci*"
   [headers.values]
     Cache-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive"
+    X-Robots-Tag = "noindex, follow, noarchive"
 
 [[headers]]
   for = "/es/pago*"
   [headers.values]
     Cache-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive"
+    X-Robots-Tag = "noindex, follow, noarchive"
 
 [[headers]]
   for = "/es/gracias*"
   [headers.values]
     Cache-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive"
+    X-Robots-Tag = "noindex, follow, noarchive"
 
 [[headers]]
   for = "/de/zahlung*"
   [headers.values]
     Cache-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive"
+    X-Robots-Tag = "noindex, follow, noarchive"
 
 [[headers]]
   for = "/de/danke*"
   [headers.values]
     Cache-Control = "no-store"
-    X-Robots-Tag = "noindex, nofollow, noarchive"
+    X-Robots-Tag = "noindex, follow, noarchive"

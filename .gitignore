@@ -4,3 +4,10 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# Audit / report artifacts
+ahrefs_report/
+*all-issues*.zip
+lh-*.json
+pf-*.json
+psi-*.json

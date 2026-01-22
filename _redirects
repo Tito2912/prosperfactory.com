@@ -1,8 +1,8 @@
-/7%20Financial%20Laws%20the%20Ultra-Rich%20Never%20Share-EN.pdf  /payment  302!
-/7%20lois%20financi%C3%A8res%20que%20les%20ultra-riches%20ne%20partagent%20jamais-FR.pdf  /fr/paiement  302!
-/7%20leyes%20financieras%20que%20los%20ultra%20ricos%20nunca%20comparten-ES.pdf  /es/pago  302!
-/7%20Finanzgesetze,%20die%20die%20Superreichen%20niemals%20weitergeben-DE.pdf  /de/zahlung  302!
-/7%20Finanzgesetze%2C%20die%20die%20Superreichen%20niemals%20weitergeben-DE.pdf  /de/zahlung  302!
+/7%20Financial%20Laws%20the%20Ultra-Rich%20Never%20Share-EN.pdf  https://buy.stripe.com/14AbJ0fwy5uj59R0Ol63K00  302!
+/7%20lois%20financi%C3%A8res%20que%20les%20ultra-riches%20ne%20partagent%20jamais-FR.pdf  https://buy.stripe.com/dRm7sK0BEbSHeKr0Ol63K01  302!
+/7%20leyes%20financieras%20que%20los%20ultra%20ricos%20nunca%20comparten-ES.pdf  https://buy.stripe.com/5kQdR87022i71XF54B63K02  302!
+/7%20Finanzgesetze,%20die%20die%20Superreichen%20niemals%20weitergeben-DE.pdf  https://buy.stripe.com/6oU7sKfwy9Kz59R2Wt63K03  302!
+/7%20Finanzgesetze%2C%20die%20die%20Superreichen%20niemals%20weitergeben-DE.pdf  https://buy.stripe.com/6oU7sKfwy9Kz59R2Wt63K03  302!
 
 /legal-notice.html  /legal-notice  301!
 /privacy-policy.html  /privacy-policy  301!
@@ -24,11 +24,25 @@
 /es/mentions-legales  /es/mentions-legales.html  200
 /de/datenschutzerklaerung  /de/datenschutzerklaerung.html  200
 /de/mentions-legales  /de/mentions-legales.html  200
-/thankyou  /thankyou.html  200
-/payment  /payment.html  200
-/fr/merci  /fr/merci.html  200
-/fr/paiement  /fr/paiement.html  200
-/es/gracias  /es/gracias.html  200
-/es/pago  /es/pago.html  200
-/de/danke  /de/danke.html  200
-/de/zahlung  /de/zahlung.html  200
+
+# Block direct access to checkout/thank-you HTML pages
+/thankyou.html  /  302!
+/fr/merci.html  /fr/  302!
+/es/gracias.html  /es/  302!
+/de/danke.html  /de/  302!
+
+# Checkout: redirect to Stripe Payment Links (no local checkout pages)
+/payment  https://buy.stripe.com/14AbJ0fwy5uj59R0Ol63K00  302!
+/payment.html  https://buy.stripe.com/14AbJ0fwy5uj59R0Ol63K00  302!
+/fr/paiement  https://buy.stripe.com/dRm7sK0BEbSHeKr0Ol63K01  302!
+/fr/paiement.html  https://buy.stripe.com/dRm7sK0BEbSHeKr0Ol63K01  302!
+/es/pago  https://buy.stripe.com/5kQdR87022i71XF54B63K02  302!
+/es/pago.html  https://buy.stripe.com/5kQdR87022i71XF54B63K02  302!
+/de/zahlung  https://buy.stripe.com/6oU7sKfwy9Kz59R2Wt63K03  302!
+/de/zahlung.html  https://buy.stripe.com/6oU7sKfwy9Kz59R2Wt63K03  302!
+
+# Thank-you pages: gated via function (requires valid Stripe session_id)
+/thankyou  /.netlify/functions/thankyou_en  200
+/fr/merci  /.netlify/functions/thankyou_fr  200
+/es/gracias  /.netlify/functions/thankyou_es  200
+/de/danke  /.netlify/functions/thankyou_de  200

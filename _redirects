@@ -42,7 +42,7 @@
 /de/zahlung.html  https://buy.stripe.com/6oU7sKfwy9Kz59R2Wt63K03  302!
 
 # Thank-you pages: gated via function (requires valid Stripe session_id)
-/thankyou  /.netlify/functions/thankyou_en  200
-/fr/merci  /.netlify/functions/thankyou_fr  200
-/es/gracias  /.netlify/functions/thankyou_es  200
-/de/danke  /.netlify/functions/thankyou_de  200
+/thankyou  /.netlify/functions/thankyou_en  200!
+/fr/merci  /.netlify/functions/thankyou_fr  200!
+/es/gracias  /.netlify/functions/thankyou_es  200!
+/de/danke  /.netlify/functions/thankyou_de  200!

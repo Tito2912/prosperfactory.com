@@ -1,73 +1,82 @@
 @font-face {
-            font-family: "Inter";
-            font-style: normal;
-            font-weight: 700;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/inter/700.woff2) format('woff2');
-          }
+	            font-family: "Inter";
+	            font-style: normal;
+	            font-weight: 700;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/inter/700.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Inter";
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/inter/regular.woff2) format('woff2');
-          }
+	            font-family: "Inter";
+	            font-style: normal;
+	            font-weight: 400;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/inter/regular.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Raleway";
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/raleway/regular.woff2) format('woff2');
-          }
+	            font-family: "Raleway";
+	            font-style: normal;
+	            font-weight: 400;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/raleway/regular.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Playfair Display";
-            font-style: normal;
-            font-weight: 700;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/playfairdisplay/700.woff2) format('woff2');
-          }
+	            font-family: "Playfair Display";
+	            font-style: normal;
+	            font-weight: 700;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/playfairdisplay/700.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Open Sans";
-            font-style: normal;
-            font-weight: 700;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/700.woff2) format('woff2');
-          }
+	            font-family: "Open Sans";
+	            font-style: normal;
+	            font-weight: 700;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/700.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Open Sans";
-            font-style: italic;
-            font-weight: 400;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/italic.woff2) format('woff2');
-          }
+	            font-family: "Open Sans";
+	            font-style: italic;
+	            font-weight: 400;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/italic.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Open Sans";
-            font-style: italic;
-            font-weight: 700;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/700italic.woff2) format('woff2');
-          }
+	            font-family: "Open Sans";
+	            font-style: italic;
+	            font-weight: 700;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/700italic.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Open Sans";
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/regular.woff2) format('woff2');
-          }
+	            font-family: "Open Sans";
+	            font-style: normal;
+	            font-weight: 400;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/regular.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Playfair Display";
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/playfairdisplay/regular.woff2) format('woff2');
-          }
+	            font-family: "Playfair Display";
+	            font-style: normal;
+	            font-weight: 400;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/playfairdisplay/regular.woff2) format('woff2');
+	          }
 
 /* ---- split from inline <style> blocks ---- */
 

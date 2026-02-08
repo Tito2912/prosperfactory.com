@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Gracias por tu compra en Prosper Factory. Descarga el Manual Estratégico™ y guarda a mano los enlaces de soporte y facturación.">
-  <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
-  <link rel="canonical" href="https://prosperfactory.com/es/gracias">
-  <link rel="alternate" hreflang="en" href="https://prosperfactory.com/thankyou">
-  <link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/merci">
-  <link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/gracias">
-  <link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/danke">
-  <link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/thankyou">
-  <meta property="og:title" content="Gracias — Las 7 leyes financieras | Prosper Factory">
-  <meta property="og:description" content="Accede al Manual Estrat&eacute;gico, a tus bonos y a los enlaces de soporte tras tu compra Prosper Factory.">
-  <meta property="og:type" content="product">
-  <meta property="og:url" content="https://prosperfactory.com/es/gracias">
-  <meta property="og:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png">
-  <meta property="og:image:alt" content="Portada del Manual Estrat&eacute;gico">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gracias — Las 7 leyes financieras | Prosper Factory">
-  <meta name="twitter:description" content="Accede al Manual Estrat&eacute;gico, a tus bonos y a los enlaces de soporte tras tu compra Prosper Factory.">
-  <meta name="twitter:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png">
-  <title>Gracias &ndash; Las 7 leyes financieras</title>
-  <style>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Gracias – Las 7 leyes financieras</title>
+<meta name="description" content="Gracias por tu compra en Prosper Factory. Descarga el Manual Estratégico™ y guarda a mano los enlaces de soporte y facturación."/>
+<link href="/assets/favicon-32x32.png" rel="icon" type="image/x-icon"/>
+<link rel="canonical" href="https://prosperfactory.com/es/gracias"/>
+<link href="https://prosperfactory.com/thankyou" hreflang="en" rel="alternate"/>
+<link href="https://prosperfactory.com/fr/merci" hreflang="fr" rel="alternate"/>
+<link href="https://prosperfactory.com/es/gracias" hreflang="es" rel="alternate"/>
+<link href="https://prosperfactory.com/de/danke" hreflang="de" rel="alternate"/>
+<link href="https://prosperfactory.com/thankyou" hreflang="x-default" rel="alternate"/>
+<meta property="og:title" content="Gracias – Las 7 leyes financieras"/>
+<meta property="og:description" content="Gracias por tu compra en Prosper Factory. Descarga el Manual Estratégico™ y guarda a mano los enlaces de soporte y facturación."/>
+<meta property="og:type" content="product"/>
+<meta property="og:url" content="https://prosperfactory.com/es/gracias"/>
+<meta property="og:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png"/>
+<meta property="og:image:alt" content="Portada del Manual Estratégico"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Gracias – Las 7 leyes financieras"/>
+<meta name="twitter:description" content="Gracias por tu compra en Prosper Factory. Descarga el Manual Estratégico™ y guarda a mano los enlaces de soporte y facturación."/>
+<meta name="twitter:image" content="https://prosperfactory.com/assets/68c462e07fdf4_miniatureebook1.png"/>
+<style>
     :root {
       color-scheme: dark;
       --background: radial-gradient(circle at top, #2a1906 0%, #150c04 55%, #080402 100%);
@@ -119,22 +116,22 @@
       main { padding: 34px 26px; }
     }
   </style>
-</head>
+<meta property="og:site_name" content="prosperfactory.com"/><meta name="twitter:image:alt" content="Gracias – Las 7 leyes financieras"/><meta name="twitter:url" content="https://prosperfactory.com/es/gracias"/></head>
 <body>
-  <main>
-    <h1>&iexcl;Gracias por tu pedido!</h1>
-    <p>
-      Tu pago est&aacute; confirmado. Haz clic en el bot&oacute;n para descargar el Manual Estrat&eacute;gico&trade;
-      <strong>Las 7 leyes financieras que los ultra ricos nunca comparten</strong> (PDF de 32 p&aacute;ginas).
-      Conserva el enlace de confirmaci&oacute;n de Stripe: contiene un token seguro necesario para acceder a tu descarga m&aacute;s adelante.
+<main>
+<h1>¡Gracias por tu pedido!</h1>
+<p>
+      Tu pago está confirmado. Haz clic en el botón para descargar el Manual Estratégico™
+      <strong>Las 7 leyes financieras que los ultra ricos nunca comparten</strong> (PDF de 32 páginas).
+      Conserva el enlace de confirmación de Stripe: contiene un token seguro necesario para acceder a tu descarga más adelante.
     </p>
-    <a class="button" id="download-button" href="#" aria-disabled="true">
-      Descargar el PDF en espa&ntilde;ol
+<a aria-disabled="true" class="button" href="#" id="download-button">
+      Descargar el PDF en español
     </a>
-    <p id="download-warning" style="margin-top:12px;color:var(--muted);">
-      Descarga bloqueada. Accede a esta p&aacute;gina desde el enlace de confirmaci&oacute;n de Stripe despu&eacute;s del pago.
+<p id="download-warning" style="margin-top:12px;color:var(--muted);">
+      Descarga bloqueada. Accede a esta página desde el enlace de confirmación de Stripe después del pago.
     </p>
-    <script>
+<script>
       (function () {
         var params = new URLSearchParams(window.location.search);
         var sessionId = params.get("session_id");
@@ -164,30 +161,30 @@
         if (warning) warning.style.display = "none";
       })();
     </script>
-    <section class="steps" aria-labelledby="pasos-siguientes">
-      <h2 id="pasos-siguientes">Pasos recomendados</h2>
-      <ol>
-        <li><strong>Guardar el archivo:</strong> Descarga el PDF y crea una copia de seguridad en tu nube o disco externo. Compartir el enlace con tu correo secundario evita p&eacute;rdidas.</li>
-        <li><strong>Revisar los bonos:</strong> El correo de confirmaci&oacute;n incluye enlaces a plantillas y al plan de acci&oacute;n de 35 minutos. Programa recordatorios para completar cada m&oacute;dulo.</li>
-        <li><strong>Solicitar ayuda:</strong> Para facturas, soporte o dudas sobre la aplicaci&oacute;n del contenido, escribe a <a href="mailto:contact.ecomshopfrance@gmail.com">contact.ecomshopfrance@gmail.com</a>. Respondemos en menos de 24 horas h&aacute;biles.</li>
-      </ol>
-    </section>
-    <section class="next-steps" aria-labelledby="clientes-actuales">
-      <h2 id="clientes-actuales">Para clientes frecuentes</h2>
-      <p>Si deseas actualizar tu forma de pago o adquirir nuevos recursos, utiliza la p&aacute;gina segura <a href="/es/pago">prosperfactory.com/es/pago</a>. Ah&iacute; avisamos tambi&eacute;n de futuras ampliaciones del material.</p>
-      <p>Las novedades sobre el Manual Estrat&eacute;gico&trade; se publican en la <a href="/es/">p&aacute;gina principal de Prosper Factory</a>. Vis&iacute;tala peri&oacute;dicamente para no perderte nuevas versiones o bonus.</p>
-      <p>Cuando el navegador no descargue autom&aacute;ticamente, pulsa el bot&oacute;n con el bot&oacute;n derecho y elige &laquo;Guardar enlace como&raquo;. Este m&eacute;todo funciona igual en ordenadores y dispositivos m&oacute;viles.</p>
-    </section>
-    <section class="next-steps" aria-labelledby="preguntas-frecuentes">
-      <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
-      <p><strong>Factura y datos fiscales:</strong> Encontrar&aacute;s la factura adjunta al correo de confirmaci&oacute;n de Stripe. Si necesitas incluir NIF, raz&oacute;n social u otros detalles contables, responde a ese mismo mensaje con la informaci&oacute;n requerida y recibir&aacute;s una versi&oacute;n actualizada en menos de un d&iacute;a h&aacute;bil.</p>
-      <p><strong>Ruta de lectura recomendada:</strong> Empieza con el cap&iacute;tulo sobre protecci&oacute;n del capital y sigue con las hojas de trabajo de flujo de caja. Muchos miembros imprimen la lista de 35 minutos para marcar cada acci&oacute;n cumplida y registrar decisiones importantes en su cuaderno financiero.</p>
-      <p><strong>Solicitar acompa&ntilde;amiento:</strong> Para sesiones privadas, revisiones de estrategia o dudas espec&iacute;ficas, escribe a <a href="mailto:contact.ecomshopfrance@gmail.com">contact.ecomshopfrance@gmail.com</a>. Explica tu objetivo, el plazo que manejas y podremos recomendarte la ayuda m&aacute;s adecuada o preparar un seguimiento personalizado.</p>
-    </section>
-    <footer>
-      &iquest;Necesitas ayuda? Escribe a <a href="mailto:contact.ecomshopfrance@gmail.com">contact.ecomshopfrance@gmail.com</a>.<br>
-      <a href="/es/" style="color: var(--accent);">Volver a la p&aacute;gina principal</a> &middot; <a href="/es/pago" style="color: var(--accent);">Ir a la p&aacute;gina de pago</a>
-    </footer>
-  </main>
+<section aria-labelledby="pasos-siguientes" class="steps">
+<h2 id="pasos-siguientes">Pasos recomendados</h2>
+<ol>
+<li><strong>Guardar el archivo:</strong> Descarga el PDF y crea una copia de seguridad en tu nube o disco externo. Compartir el enlace con tu correo secundario evita pérdidas.</li>
+<li><strong>Revisar los bonos:</strong> El correo de confirmación incluye enlaces a plantillas y al plan de acción de 35 minutos. Programa recordatorios para completar cada módulo.</li>
+<li><strong>Solicitar ayuda:</strong> Para facturas, soporte o dudas sobre la aplicación del contenido, escribe a <a href="mailto:contact.ecomshopfrance@gmail.com">contact.ecomshopfrance@gmail.com</a>. Respondemos en menos de 24 horas hábiles.</li>
+</ol>
+</section>
+<section aria-labelledby="clientes-actuales" class="next-steps">
+<h2 id="clientes-actuales">Para clientes frecuentes</h2>
+<p>Si deseas actualizar tu forma de pago o adquirir nuevos recursos, utiliza la página segura <a href="/es/pago">prosperfactory.com/es/pago</a>. Ahí avisamos también de futuras ampliaciones del material.</p>
+<p>Las novedades sobre el Manual Estratégico™ se publican en la <a href="/es/">página principal de Prosper Factory</a>. Visítala periódicamente para no perderte nuevas versiones o bonus.</p>
+<p>Cuando el navegador no descargue automáticamente, pulsa el botón con el botón derecho y elige «Guardar enlace como». Este método funciona igual en ordenadores y dispositivos móviles.</p>
+</section>
+<section aria-labelledby="preguntas-frecuentes" class="next-steps">
+<h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+<p><strong>Factura y datos fiscales:</strong> Encontrarás la factura adjunta al correo de confirmación de Stripe. Si necesitas incluir NIF, razón social u otros detalles contables, responde a ese mismo mensaje con la información requerida y recibirás una versión actualizada en menos de un día hábil.</p>
+<p><strong>Ruta de lectura recomendada:</strong> Empieza con el capítulo sobre protección del capital y sigue con las hojas de trabajo de flujo de caja. Muchos miembros imprimen la lista de 35 minutos para marcar cada acción cumplida y registrar decisiones importantes en su cuaderno financiero.</p>
+<p><strong>Solicitar acompañamiento:</strong> Para sesiones privadas, revisiones de estrategia o dudas específicas, escribe a <a href="mailto:contact.ecomshopfrance@gmail.com">contact.ecomshopfrance@gmail.com</a>. Explica tu objetivo, el plazo que manejas y podremos recomendarte la ayuda más adecuada o preparar un seguimiento personalizado.</p>
+</section>
+<footer>
+      ¿Necesitas ayuda? Escribe a <a href="mailto:contact.ecomshopfrance@gmail.com">contact.ecomshopfrance@gmail.com</a>.<br/>
+<a href="/es/" style="color: var(--accent);">Volver a la página principal</a> · <a href="/es/pago" style="color: var(--accent);">Ir a la página de pago</a>
+</footer>
+</main>
 </body>
 </html>

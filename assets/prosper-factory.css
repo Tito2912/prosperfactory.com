@@ -691,75 +691,84 @@ ul{margin:0;}/*!sc*/
 .cOLDzA{display:none;}/*!sc*//*!sc*/
 
 @font-face {
-            font-family: "Inter";
-            font-style: normal;
-            font-weight: 700;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/inter/700.woff2) format('woff2');
-          }
+	            font-family: "Inter";
+	            font-style: normal;
+	            font-weight: 700;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/inter/700.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Inter";
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/inter/regular.woff2) format('woff2');
-          }
+	            font-family: "Inter";
+	            font-style: normal;
+	            font-weight: 400;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/inter/regular.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Raleway";
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/raleway/regular.woff2) format('woff2');
-          }
+	            font-family: "Raleway";
+	            font-style: normal;
+	            font-weight: 400;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/raleway/regular.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Playfair Display";
-            font-style: normal;
-            font-weight: 700;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/playfairdisplay/700.woff2) format('woff2');
-          }
+	            font-family: "Playfair Display";
+	            font-style: normal;
+	            font-weight: 700;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/playfairdisplay/700.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Open Sans";
-            font-style: normal;
-            font-weight: 700;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/700.woff2) format('woff2');
-          }
+	            font-family: "Open Sans";
+	            font-style: normal;
+	            font-weight: 700;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/700.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Open Sans";
-            font-style: italic;
-            font-weight: 400;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/italic.woff2) format('woff2');
-          }
+	            font-family: "Open Sans";
+	            font-style: italic;
+	            font-weight: 400;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/italic.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Open Sans";
-            font-style: italic;
-            font-weight: 700;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/700italic.woff2) format('woff2');
-          }
+	            font-family: "Open Sans";
+	            font-style: italic;
+	            font-weight: 700;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/700italic.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Open Sans";
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/regular.woff2) format('woff2');
-          }
+	            font-family: "Open Sans";
+	            font-style: normal;
+	            font-weight: 400;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/opensans/regular.woff2) format('woff2');
+	          }
         
 
           @font-face {
-            font-family: "Playfair Display";
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/playfairdisplay/regular.woff2) format('woff2');
-          }
+	            font-family: "Playfair Display";
+	            font-style: normal;
+	            font-weight: 400;
+	            font-display: swap;
+	            src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/playfairdisplay/regular.woff2) format('woff2');
+	          }
 
 .fal{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;}.fal{font-family:"Font Awesome 6 Pro";font-weight:300;}.fa-chevron-circle-left:before{content:"\f137";}.fa-chevron-circle-right:before{content:"\f138";}.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;}.fas{font-family:"Font Awesome 6 Pro";font-weight:900;}.fa-chevron-down:before{content:"\f078";}.fa-chevron-left:before{content:"\f053";}.fad.fa-chevron-right:after{content:"\f054\f054";}.fad{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;}.fad{position:relative;font-family:"Font Awesome 6 Duotone";font-weight:900;letter-spacing:normal;}.fad:before{position:absolute;color:var(--fa-primary-color,inherit);opacity:var(--fa-primary-opacity,1);}.fad:after{color:var(--fa-secondary-color,inherit);}.fad:after{opacity:var(--fa-secondary-opacity,0.4);}.fa-chevron-right:before{content:"\f054";}.fa-chevron-up:before{content:"\f077";}.fa-circle:before{content:"\f111";}.far{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;}.far{font-family:"Font Awesome 6 Pro";font-weight:400;}.fa-clock:before{content:"\f017";}.fa-eye:before{content:"\f06e";}.fa-eye-slash:before{content:"\f070";}.fa{font-family:var(--fa-style-family,"Font Awesome 6 Pro");font-weight:var(--fa-style,900);}.fa{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;}.fa-times:before{content:"\f00d";}.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;}.fas{font-family:"Font Awesome 6 Pro";font-weight:900;}.fa-times-circle:before{content:"\f057";}.fa-check-circle:before{content:"\f058";}.fa-arrow-circle-right:before{content:"\f0a9";}.fa-chevron-circle-up:before{content:"\f139";}
 
@@ -805,4 +814,3 @@ ul{margin:0;}/*!sc*/
   .seo-copy a { color:#f8d678; text-decoration:none; }
   .seo-copy a:hover { text-decoration:underline; }
   @media (max-width:640px) { .seo-copy .seo-container { padding:28px 20px; } }
-

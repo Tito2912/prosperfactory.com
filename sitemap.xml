@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://prosperfactory.com/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-03-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/"/>
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://prosperfactory.com/fr/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-03-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/"/>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://prosperfactory.com/es/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-03-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/"/>
@@ -29,7 +29,7 @@
   </url>
   <url>
     <loc>https://prosperfactory.com/de/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-03-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/"/>
@@ -99,5 +99,195 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/politique-de-confidentialite"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/politica-de-confidencialidad"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/datenschutzerklaerung"/>
+  </url>
+
+  <!-- Disclaimer -->
+  <url>
+    <loc>https://prosperfactory.com/disclaimer</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/disclaimer"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/fr/disclaimer</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/disclaimer"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/es/disclaimer</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/disclaimer"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/de/disclaimer</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/disclaimer"/>
+  </url>
+
+  <!-- Affiliate disclosure -->
+  <url>
+    <loc>https://prosperfactory.com/affiliate-disclosure</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/affiliate-disclosure"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/fr/affiliate-disclosure</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/affiliate-disclosure"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/es/affiliate-disclosure</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/affiliate-disclosure"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/de/affiliate-disclosure</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/affiliate-disclosure"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/affiliate-disclosure"/>
+  </url>
+
+  <!-- TradingView -->
+  <url>
+    <loc>https://prosperfactory.com/tools/tradingview</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/tools/tradingview"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/fr/tools/tradingview</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/tools/tradingview"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/es/tools/tradingview</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/tools/tradingview"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/de/tools/tradingview</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/tools/tradingview"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/tools/tradingview"/>
+  </url>
+
+  <!-- Bitpanda -->
+  <url>
+    <loc>https://prosperfactory.com/crypto/bitpanda</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/crypto/bitpanda"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/fr/crypto/bitpanda</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/crypto/bitpanda"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/es/crypto/bitpanda</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/crypto/bitpanda"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/de/crypto/bitpanda</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/crypto/bitpanda"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/crypto/bitpanda"/>
+  </url>
+
+  <!-- eToro -->
+  <url>
+    <loc>https://prosperfactory.com/brokers/etoro</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/brokers/etoro"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/fr/brokers/etoro</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/brokers/etoro"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/es/brokers/etoro</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/brokers/etoro"/>
+  </url>
+  <url>
+    <loc>https://prosperfactory.com/de/brokers/etoro</loc>
+    <lastmod>2026-03-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://prosperfactory.com/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://prosperfactory.com/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://prosperfactory.com/fr/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://prosperfactory.com/es/brokers/etoro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://prosperfactory.com/de/brokers/etoro"/>
   </url>
 </urlset>

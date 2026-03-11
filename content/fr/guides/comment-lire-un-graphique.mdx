@@ -1,0 +1,173 @@
+---
+title: "Comment lire un graphique (candles, tendance, niveaux)"
+description: "Apprendre à lire un graphique : chandeliers (OHLC), unités de temps, tendance, supports/résistances, volume et routine simple (contenu informatif)."
+updatedAt: "2026-03-11"
+type: "guide"
+primaryKeyword: "comment lire un graphique"
+jumpLinks:
+  - href: "#ce-que-montre-un-graphique"
+    label: "Ce que ça montre"
+  - href: "#chandeliers-en-60-secondes"
+    label: "Chandeliers"
+  - href: "#unites-de-temps"
+    label: "Unités de temps"
+  - href: "#tableau-rapide-horizon-unite-de-temps"
+    label: "Tableau UT"
+  - href: "#tendance-et-contexte"
+    label: "Tendance"
+  - href: "#niveaux-supports-et-resistances"
+    label: "Niveaux"
+  - href: "#volume"
+    label: "Volume"
+  - href: "#exemple-top-down-fictif"
+    label: "Exemple"
+  - href: "#routine-simple"
+    label: "Routine"
+  - href: "#erreurs-frequentes"
+    label: "Erreurs"
+quickAnswer:
+  - "Un graphique = prix dans le temps. Commencez par l’unité de temps et le contexte avant les indicateurs."
+  - "Travaillez en zones (pas en lignes parfaites) et utilisez des alertes pour réduire l’émotion."
+  - "Top-down (UT haute → UT basse) : contexte d’abord, détails ensuite."
+  - "Un graphique donne du contexte, pas une garantie : sizing et risque d’abord."
+cta:
+  title: "Mettre en place un workflow de graphiques"
+  body: "Pour des alertes, layouts et screeners, voir notre guide TradingView."
+  buttonLabel: "Lire le guide TradingView"
+  buttonHref: "/fr/tools/tradingview/"
+internalLinks:
+  - href: "/fr/tools/tradingview/"
+    anchor: "TradingView : avis & guide pratique"
+  - href: "/fr/guides/meilleurs-outils-analyse-technique/"
+    anchor: "Guide : meilleurs outils d’analyse technique"
+  - href: "/fr/disclaimer/"
+    anchor: "Lire l’avertissement"
+faq:
+  - q: "Faut-il lire les chandeliers pour investir ?"
+    a: "Pas forcément. Les chandeliers sont une visualisation. Beaucoup d’investisseurs long terme utilisent surtout des unités de temps élevées."
+  - q: "Quelle unité de temps choisir ?"
+    a: "Alignez l’unité de temps sur votre horizon. Pour le long terme, on part souvent de l’hebdo/mensuel."
+  - q: "Support/résistance : ligne exacte ou zone ?"
+    a: "Souvent, une zone est plus réaliste qu’une ligne au centime près."
+  - q: "Les indicateurs prédisent-ils le futur ?"
+    a: "Non. Ils résument des données passées. Ils peuvent aider un process, pas supprimer le risque."
+  - q: "Pourquoi utiliser des alertes ?"
+    a: "Les alertes évitent de regarder les graphiques en continu et vous préviennent quand un niveau est atteint."
+  - q: "Faut-il des indicateurs pour lire un graphique ?"
+    a: "Non. Vous pouvez déjà faire beaucoup avec unité de temps + tendance + zones + gestion du risque. Les indicateurs viennent ensuite, si besoin."
+---
+
+## Ce que montre un graphique
+
+Un graphique montre **le prix (axe vertical)** au fil du **temps (axe horizontal)**.
+
+Plutôt que de “deviner la prochaine bougie”, posez des questions pratiques :
+
+- Quelle unité de temps est pertinente pour ma décision ?
+- Est-ce que le marché est en tendance ou en range ?
+- Quelles zones sont susceptibles de provoquer des réactions ?
+- Qu’est-ce qui invalide mon scénario ?
+
+## Chandeliers en 60 secondes
+
+Les chandeliers (OHLC) résument un mouvement de prix sur une période :
+
+- **Open** : premier prix
+- **High** : plus haut
+- **Low** : plus bas
+- **Close** : dernier prix
+
+Piège débutant : interpréter chaque bougie comme un “signal”. Une bougie, c’est de l’information, pas une stratégie.
+
+Corps et mèches (simple) :
+
+- **corps** : distance open → close (qui “gagne” la période)
+- **mèche** : zones de rejet/volatilité pendant la période
+
+Souvent, la **clôture** (close) compte plus que la mèche : elle montre où le prix termine la période.
+
+## Unités de temps
+
+L’unité de temps doit correspondre à l’intention :
+
+- **Investissement long terme :** hebdo/mensuel pour le contexte.
+- **Swing / actif :** quotidien + 4H pour la structure.
+- **Intraday :** plus de bruit → règles de risque plus strictes.
+
+Bonne pratique : “top-down” (UT haute → UT basse).
+
+## Tableau rapide : horizon → unité de temps
+
+| Votre intention | UT “contexte” | UT “décision” (souvent) |
+|---|---|---|
+| Long terme | hebdo / mensuel | hebdo / quotidien |
+| Swing | quotidien | 4H / quotidien |
+| Intraday | 4H / quotidien | 1H / 15min (plus de bruit) |
+
+Ce tableau est un point de départ. L’idée : aligner l’UT sur l’horizon, sinon vous réagissez au bruit.
+
+## Tendance et contexte
+
+La tendance dépend de l’unité de temps :
+
+- sommets/creux ascendants → tendance haussière
+- sommets/creux descendants → tendance baissière
+- latéralisation → range
+
+Beaucoup d’erreurs viennent d’un manque de contexte (ex. décider long terme sur du 5 minutes).
+
+## Niveaux : supports et résistances
+
+Les niveaux fonctionnent mieux comme des **zones** :
+
+- anciens sommets/creux
+- zones avec réactions répétées
+- niveaux “ronds” (psychologie)
+
+Marquez peu de zones, puis utilisez des alertes au lieu d’ajuster sans fin.
+
+## Volume
+
+Le volume peut apporter du contexte :
+
+- volume qui monte sur un mouvement → participation potentielle
+- volume faible → mouvement parfois plus fragile
+
+Limites :
+
+- la qualité du volume dépend du marché et de la source (surtout en crypto)
+- le volume ne “prévoit” rien à lui seul
+
+## Exemple top-down (fictif)
+
+Exemple volontairement simple sur un “actif X” (fictif) :
+
+1. **Hebdo :** identifier la tendance (hausse/baisse/range) et 1–2 zones majeures.
+2. **Quotidien :** préciser les zones (toujours en *zones*, pas au centime près).
+3. **Plan :** définir l’invalidation (“si le prix clôture sous …, mon scénario est faux”).
+4. **Exécution :** poser des alertes sur les zones, puis attendre.
+
+Si vous ne pouvez pas écrire l’invalidation, vous n’avez pas vraiment de scénario.
+
+## Routine simple
+
+Une routine de 3 minutes :
+
+1. **Choisir l’UT** (alignée sur l’horizon).
+2. **Identifier tendance/range**.
+3. **Marquer 2–4 zones**.
+4. **Définir l’invalidation**.
+5. **Mettre des alertes** et arrêter de surveiller en continu.
+
+Pour un workflow alertes/layouts, voir : [TradingView](/fr/tools/tradingview/).
+
+## Erreurs fréquentes
+
+- **Trop d’indicateurs :** plus de bruit, moins de clarté.
+- **Mauvaise UT :** décisions long terme à partir de micro-mouvements.
+- **Trop de lignes :** une carte illisible au lieu de zones utiles.
+- **Pas de règles de risque :** sizing et sorties ignorés.
+
+## Transparence & avertissement
+
+Contenu informatif uniquement, pas un conseil financier. Investir comporte des risques et vous pouvez perdre de l’argent. Lire notre [avertissement](/fr/disclaimer/).

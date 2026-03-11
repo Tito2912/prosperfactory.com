@@ -29,8 +29,22 @@ function redirect(location) {
       "Cache-Control": "no-store",
       "Content-Type": "text/plain; charset=utf-8",
       "X-Robots-Tag": "noindex, nofollow, noarchive",
+      "X-Content-Type-Options": "nosniff",
     },
     body: "Redirecting…",
+  };
+}
+
+function serverError(message) {
+  return {
+    statusCode: 500,
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "no-store",
+      "X-Robots-Tag": "noindex, nofollow, noarchive",
+      "X-Content-Type-Options": "nosniff",
+    },
+    body: message,
   };
 }
 
@@ -69,9 +83,13 @@ exports.handler = async (event) => {
     };
   }
 
-  const langRaw = event.queryStringParameters && event.queryStringParameters.lang;
+  const query = event.queryStringParameters || {};
+  const langRaw = query.lang;
   const sessionIdRaw =
-    event.queryStringParameters && event.queryStringParameters.session_id;
+    query.session_id ||
+    query.sessionId ||
+    query.checkout_session_id ||
+    query.checkoutSessionId;
   const lang = String(langRaw || "").toLowerCase().trim();
   const sessionId = String(sessionIdRaw || "").trim();
   const config = DOWNLOAD_CONFIG[lang];
@@ -80,7 +98,7 @@ exports.handler = async (event) => {
     return redirect("/payment");
   }
 
-  if (!sessionId || !sessionId.startsWith("cs_")) {
+  if (!sessionId || !/^cs_[a-zA-Z0-9_]+$/.test(sessionId)) {
     return redirect(config.fallbackUrl);
   }
 
@@ -91,12 +109,9 @@ exports.handler = async (event) => {
     ? "STRIPE_SECRET_KEY_TEST"
     : "STRIPE_SECRET_KEY";
   if (!stripeSecretKey) {
-    return {
-      statusCode: 500,
-      headers: { "Content-Type": "text/plain; charset=utf-8" },
-      body:
-        `Server misconfiguration: missing ${missingKeyEnvVar} environment variable.`,
-    };
+    return serverError(
+      `Server misconfiguration: missing ${missingKeyEnvVar} environment variable.`,
+    );
   }
 
   try {

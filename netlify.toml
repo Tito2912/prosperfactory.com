@@ -1,12 +1,15 @@
 [build]
-  publish = "."
-  command = "python ping_indexnow.py"
+  publish = "out"
+  command = "npm run build && python ping_indexnow.py"
   functions = "netlify/functions"
 
 [dev]
-  command = "python -m http.server 8000"
-  port = 8000
-  publish = "."
+  command = "npm run dev"
+  port = 3000
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
 
 [[redirects]]
   from = "http://www.prosperfactory.com/*"

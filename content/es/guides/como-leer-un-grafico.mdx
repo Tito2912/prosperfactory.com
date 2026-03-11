@@ -1,0 +1,161 @@
+---
+title: "Cómo leer un gráfico (velas, tendencia, niveles)"
+description: "Aprende a leer gráficos: velas (OHLC), marcos temporales, tendencia, soportes/resistencias, volumen y una rutina simple (educativo)."
+updatedAt: "2026-03-11"
+type: "guide"
+primaryKeyword: "cómo leer un gráfico"
+jumpLinks:
+  - href: "#que-muestra-un-grafico"
+    label: "Qué muestra"
+  - href: "#velas-en-60-segundos"
+    label: "Velas"
+  - href: "#marcos-temporales"
+    label: "Marcos"
+  - href: "#tabla-rapida-horizonte-marco-temporal"
+    label: "Tabla"
+  - href: "#tendencia-y-contexto"
+    label: "Tendencia"
+  - href: "#niveles-soportes-y-resistencias"
+    label: "Niveles"
+  - href: "#volumen"
+    label: "Volumen"
+  - href: "#ejemplo-top-down-ficticio"
+    label: "Ejemplo"
+  - href: "#rutina-simple"
+    label: "Rutina"
+  - href: "#errores-comunes"
+    label: "Errores"
+quickAnswer:
+  - "Un gráfico = precio en el tiempo. Empieza por marco temporal y contexto antes de indicadores."
+  - "Trabaja con zonas (no líneas perfectas) y usa alertas para reducir emoción."
+  - "Top-down (marco alto → marco bajo): contexto primero, detalles después."
+  - "Un gráfico da contexto, no garantía: tamaño y riesgo primero."
+cta:
+  title: "Crear un workflow de gráficos"
+  body: "Para alertas, layouts y screeners, ver nuestra guía de TradingView."
+  buttonLabel: "Leer TradingView"
+  buttonHref: "/es/tools/tradingview/"
+internalLinks:
+  - href: "/es/tools/tradingview/"
+    anchor: "TradingView: reseña y guía práctica"
+  - href: "/es/guides/mejores-herramientas-analisis-tecnico/"
+    anchor: "Guía: herramientas de análisis técnico"
+  - href: "/es/disclaimer/"
+    anchor: "Leer descargo de responsabilidad"
+faq:
+  - q: "¿Necesito velas para invertir?"
+    a: "No necesariamente. Las velas son una visualización; muchos inversores de largo plazo usan marcos altos y reglas simples."
+  - q: "¿Qué marco temporal usar?"
+    a: "Alinea el marco con tu horizonte: decisiones de largo plazo suelen empezar en semanal/mensual."
+  - q: "¿Soporte/resistencia es línea exacta?"
+    a: "Suele funcionar mejor como zona. El mercado reacciona alrededor de niveles, no en un punto exacto."
+  - q: "¿Necesito indicadores?"
+    a: "No. Puedes avanzar mucho con marco temporal + tendencia + zonas + reglas de riesgo. Los indicadores no eliminan el riesgo."
+---
+
+## Qué muestra un gráfico
+
+Un gráfico muestra **precio (eje vertical)** a lo largo del **tiempo (eje horizontal)**.
+
+Preguntas útiles:
+
+- ¿Qué marco temporal importa para mi decisión?
+- ¿El mercado está en tendencia o en rango?
+- ¿Qué zonas son relevantes?
+- ¿Qué invalida mi escenario?
+
+## Velas en 60 segundos
+
+Las velas (OHLC) resumen un periodo:
+
+- **Open**: primer precio
+- **High**: máximo
+- **Low**: mínimo
+- **Close**: último precio
+
+Trampa común: leer cada vela como señal. Una vela es información, no estrategia.
+
+Cuerpo vs mechas (simple):
+
+- **cuerpo**: open → close
+- **mecha**: rechazo/volatilidad durante el periodo
+
+A menudo, el **cierre** importa más que una mecha: muestra dónde termina el periodo.
+
+## Marcos temporales
+
+El marco debe coincidir con la intención:
+
+- **Largo plazo**: semanal/mensual para contexto.
+- **Swing/activo**: diario + 4H para estructura.
+- **Intradía**: más ruido → más disciplina de riesgo.
+
+Buena práctica: top-down (marco alto → marco bajo).
+
+## Tabla rápida: horizonte → marco temporal
+
+| Intención | Marco “contexto” | Marco “decisión” (a menudo) |
+|---|---|---|
+| Largo plazo | semanal / mensual | semanal / diario |
+| Swing | diario | 4H / diario |
+| Intradía | 4H / diario | 1H / 15m (más ruido) |
+
+## Tendencia y contexto
+
+La tendencia depende del marco:
+
+- máximos/mínimos crecientes → tendencia alcista
+- máximos/mínimos decrecientes → tendencia bajista
+- lateral → rango
+
+Muchos errores vienen de decidir largo plazo con gráficos de 5 minutos.
+
+## Niveles: soportes y resistencias
+
+Mejor como **zonas**:
+
+- máximos/mínimos previos
+- zonas con reacciones repetidas
+- números redondos (psicología)
+
+Marca pocas zonas y usa alertas.
+
+## Volumen
+
+Puede aportar contexto:
+
+- volumen creciente en movimiento → participación
+- volumen bajo → movimiento más frágil
+
+Limitaciones: depende del mercado y de la fuente (especialmente en cripto).
+
+## Ejemplo top-down (ficticio)
+
+Ejemplo simple con “Activo X”:
+
+1. **Semanal**: define régimen (tendencia/rango) y 1–2 zonas mayores.
+2. **Diario**: refina zonas (zonas, no centavos).
+3. **Plan**: escribe invalidación (“si cierra por debajo de __, estoy equivocado”).
+4. **Ejecución**: pon alertas y espera.
+
+## Rutina simple
+
+Rutina de 3 minutos:
+
+1. Elegir marco temporal.
+2. Identificar tendencia/rango.
+3. Marcar 2–4 zonas.
+4. Definir invalidación.
+5. Configurar alertas y dejar de mirar todo el día.
+
+## Errores comunes
+
+- Demasiados indicadores.
+- Marco temporal incorrecto.
+- Dibujar demasiadas líneas.
+- Sin reglas de riesgo (tamaño, pérdida máxima).
+
+## Divulgación y aviso de riesgo
+
+Contenido educativo, no asesoramiento financiero. Invertir implica riesgos y puedes perder dinero. Lee nuestro [descargo de responsabilidad](/es/disclaimer/).
+

@@ -1,0 +1,68 @@
+/7%20Financial%20Laws%20the%20Ultra-Rich%20Never%20Share-EN.pdf  https://buy.stripe.com/14AbJ0fwy5uj59R0Ol63K00  302!
+/7%20lois%20financi%C3%A8res%20que%20les%20ultra-riches%20ne%20partagent%20jamais-FR.pdf  https://buy.stripe.com/dRm7sK0BEbSHeKr0Ol63K01  302!
+/7%20leyes%20financieras%20que%20los%20ultra%20ricos%20nunca%20comparten-ES.pdf  https://buy.stripe.com/5kQdR87022i71XF54B63K02  302!
+/7%20Finanzgesetze,%20die%20die%20Superreichen%20niemals%20weitergeben-DE.pdf  https://buy.stripe.com/6oU7sKfwy9Kz59R2Wt63K03  302!
+/7%20Finanzgesetze%2C%20die%20die%20Superreichen%20niemals%20weitergeben-DE.pdf  https://buy.stripe.com/6oU7sKfwy9Kz59R2Wt63K03  302!
+
+/legal-notice.html  /legal-notice/  301!
+/privacy-policy.html  /privacy-policy/  301!
+/fr/mentions-legales.html  /fr/mentions-legales/  301!
+/fr/politique-de-confidentialite.html  /fr/politique-de-confidentialite/  301!
+/es/mentions-legales.html  /es/mentions-legales/  301!
+/es/politica-de-confidencialidad.html  /es/politica-de-confidencialidad/  301!
+/de/mentions-legales.html  /de/mentions-legales/  301!
+/de/datenschutzerklaerung.html  /de/datenschutzerklaerung/  301!
+
+/disclaimer.html  /disclaimer/  301!
+/affiliate-disclosure.html  /affiliate-disclosure/  301!
+/fr/disclaimer.html  /fr/disclaimer/  301!
+/fr/affiliate-disclosure.html  /fr/affiliate-disclosure/  301!
+/es/disclaimer.html  /es/disclaimer/  301!
+/es/affiliate-disclosure.html  /es/affiliate-disclosure/  301!
+/de/disclaimer.html  /de/disclaimer/  301!
+/de/affiliate-disclosure.html  /de/affiliate-disclosure/  301!
+
+/tools/tradingview.html  /tools/tradingview/  301!
+/fr/tools/tradingview.html  /fr/tools/tradingview/  301!
+/es/tools/tradingview.html  /es/tools/tradingview/  301!
+/de/tools/tradingview.html  /de/tools/tradingview/  301!
+
+/crypto/bitpanda.html  /crypto/bitpanda/  301!
+/fr/crypto/bitpanda.html  /fr/crypto/bitpanda/  301!
+/es/crypto/bitpanda.html  /es/crypto/bitpanda/  301!
+/de/crypto/bitpanda.html  /de/crypto/bitpanda/  301!
+
+/brokers/etoro.html  /brokers/etoro/  301!
+/fr/brokers/etoro.html  /fr/brokers/etoro/  301!
+/es/brokers/etoro.html  /es/brokers/etoro/  301!
+/de/brokers/etoro.html  /de/brokers/etoro/  301!
+
+# Block direct access to checkout/thank-you HTML pages
+/thankyou.html  /  302!
+/fr/merci.html  /fr/  302!
+/es/gracias.html  /es/  302!
+/de/danke.html  /de/  302!
+
+# Checkout: redirect to Stripe Payment Links (no local checkout pages)
+/payment  https://buy.stripe.com/14AbJ0fwy5uj59R0Ol63K00  302!
+/payment/  https://buy.stripe.com/14AbJ0fwy5uj59R0Ol63K00  302!
+/payment.html  https://buy.stripe.com/14AbJ0fwy5uj59R0Ol63K00  302!
+/fr/paiement  https://buy.stripe.com/dRm7sK0BEbSHeKr0Ol63K01  302!
+/fr/paiement/  https://buy.stripe.com/dRm7sK0BEbSHeKr0Ol63K01  302!
+/fr/paiement.html  https://buy.stripe.com/dRm7sK0BEbSHeKr0Ol63K01  302!
+/es/pago  https://buy.stripe.com/5kQdR87022i71XF54B63K02  302!
+/es/pago/  https://buy.stripe.com/5kQdR87022i71XF54B63K02  302!
+/es/pago.html  https://buy.stripe.com/5kQdR87022i71XF54B63K02  302!
+/de/zahlung  https://buy.stripe.com/6oU7sKfwy9Kz59R2Wt63K03  302!
+/de/zahlung/  https://buy.stripe.com/6oU7sKfwy9Kz59R2Wt63K03  302!
+/de/zahlung.html  https://buy.stripe.com/6oU7sKfwy9Kz59R2Wt63K03  302!
+
+# Thank-you pages: gated via function (requires valid Stripe session_id)
+/thankyou  /.netlify/functions/thankyou_en  200!
+/thankyou/  /.netlify/functions/thankyou_en  200!
+/fr/merci  /.netlify/functions/thankyou_fr  200!
+/fr/merci/  /.netlify/functions/thankyou_fr  200!
+/es/gracias  /.netlify/functions/thankyou_es  200!
+/es/gracias/  /.netlify/functions/thankyou_es  200!
+/de/danke  /.netlify/functions/thankyou_de  200!
+/de/danke/  /.netlify/functions/thankyou_de  200!

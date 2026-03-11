@@ -1,0 +1,133 @@
+---
+title: "Chart lesen: Grundlagen (Kerzen, Trend, Zonen)"
+description: "Chart‑Basics: Kerzen (OHLC), Zeitebenen, Trend, Support/Resistance‑Zonen, Volumen und eine einfache Routine (informativ)."
+updatedAt: "2026-03-11"
+type: "guide"
+primaryKeyword: "chart lesen"
+jumpLinks:
+  - href: "#was-ein-chart-zeigt"
+    label: "Was zeigt"
+  - href: "#kerzen-in-60-sekunden"
+    label: "Kerzen"
+  - href: "#zeitebenen"
+    label: "Zeitebenen"
+  - href: "#schnelltabelle-horizont-zeitebene"
+    label: "Tabelle"
+  - href: "#trend-und-kontext"
+    label: "Trend"
+  - href: "#zonen-support-und-resistance"
+    label: "Zonen"
+  - href: "#volumen"
+    label: "Volumen"
+  - href: "#top-down-beispiel-fiktiv"
+    label: "Beispiel"
+  - href: "#einfache-routine"
+    label: "Routine"
+  - href: "#typische-fehler"
+    label: "Fehler"
+quickAnswer:
+  - "Ein Chart zeigt Preis über Zeit. Starte mit Zeitebene und Kontext, nicht mit Indikatoren."
+  - "Arbeite mit Zonen statt perfekten Linien und nutze Alerts gegen Emotionen."
+  - "Top‑down (hoch → runter): Kontext zuerst, Details später."
+  - "Charts geben Kontext, keine Garantie: Positionsgröße und Risiko zuerst."
+cta:
+  title: "Chart‑Workflow bauen"
+  body: "Für Alerts, Layouts und Screeners: TradingView‑Guide ansehen."
+  buttonLabel: "TradingView lesen"
+  buttonHref: "/de/tools/tradingview/"
+internalLinks:
+  - href: "/de/tools/tradingview/"
+    anchor: "TradingView: Praxis‑Guide"
+  - href: "/de/guides/beste-tools-technische-analyse/"
+    anchor: "Guide: Tools für technische Analyse"
+  - href: "/de/disclaimer/"
+    anchor: "Haftungsausschluss lesen"
+faq:
+  - q: "Brauche ich Candlesticks zum Investieren?"
+    a: "Nicht unbedingt. Viele langfristige Investoren nutzen hohe Zeitebenen und einfache Regeln."
+  - q: "Welche Zeitebene soll ich nutzen?"
+    a: "Richte die Zeitebene am Horizont aus. Langfristige Entscheidungen starten oft auf Wochen‑/Monatscharts."
+  - q: "Brauche ich Indikatoren?"
+    a: "Nein. Du kommst weit mit Zeitebene + Trend + Zonen + Risiko‑Regeln. Indikatoren entfernen kein Risiko."
+---
+
+## Was ein Chart zeigt
+
+Ein Chart zeigt **Preis (y‑Achse)** über **Zeit (x‑Achse)**.
+
+Nützliche Fragen:
+
+- Welche Zeitebene passt zu meiner Entscheidung?
+- Trend oder Range?
+- Welche Zonen sind relevant?
+- Was invalidiert meine Idee?
+
+## Kerzen in 60 Sekunden
+
+OHLC:
+
+- Open, High, Low, Close
+
+Kerzen sind Information – keine Strategie. Oft ist der **Close** wichtiger als eine Wick.
+
+## Zeitebenen
+
+- langfristig: Woche/Monat (Kontext)
+- swing: Tag/4H (Struktur)
+- intraday: mehr Rauschen → strengere Risiko‑Regeln
+
+Top‑down: hoch → runter.
+
+## Schnelltabelle: Horizont → Zeitebene
+
+| Intent | Kontext‑Zeitebene | Entscheidungs‑Zeitebene |
+|---|---|---|
+| langfristig | Woche / Monat | Woche / Tag |
+| swing | Tag | 4H / Tag |
+| intraday | 4H / Tag | 1H / 15m |
+
+## Trend und Kontext
+
+Trend ist zeitebenen‑abhängig:
+
+- höhere Hochs/Tiefs → uptrend
+- tiefere Hochs/Tiefs → downtrend
+- seitwärts → range
+
+## Zonen: Support und Resistance
+
+Besser als Zonen:
+
+- frühere Hochs/Tiefs
+- Bereiche mit wiederholten Reaktionen
+- runde Levels
+
+## Volumen
+
+Volumen kann Kontext geben, hat aber Limits (Quelle/Markt).
+
+## Top-down Beispiel (fiktiv)
+
+1. Woche: Trend/Range + 1–2 Hauptzonen.
+2. Tag: Zonen verfeinern.
+3. Invalidation aufschreiben (“Close unter ___ = falsch”).
+4. Alerts setzen und warten.
+
+## Einfache Routine
+
+1. Zeitebene wählen.
+2. Trend/Range.
+3. 2–4 Zonen.
+4. Invalidation.
+5. Alerts – nicht dauernd schauen.
+
+## Typische Fehler
+
+- zu viele Indikatoren
+- falsche Zeitebene
+- zu viele Linien
+- keine Risiko‑Regel
+
+## Hinweis
+
+Inhalte sind rein informativ und keine Finanzberatung. Investieren ist riskant; du kannst Geld verlieren. Lies den [Haftungsausschluss](/de/disclaimer/).

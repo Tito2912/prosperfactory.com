@@ -1,6 +1,8 @@
 const PRODUCT_ID = "prod_TGSwKIkmghLNuZ";
 const LANG = "en";
 const HOME_FALLBACK = "/";
+const CHECKOUT_FALLBACK = "/payment";
+const SUPPORT_EMAIL = "contact.ecomshopfrance@gmail.com";
 
 function notFound() {
   return {
@@ -9,6 +11,7 @@ function notFound() {
       "Content-Type": "text/plain; charset=utf-8",
       "Cache-Control": "no-store",
       "X-Robots-Tag": "noindex, nofollow, noarchive",
+      "X-Content-Type-Options": "nosniff",
     },
     body: "Not Found",
   };
@@ -21,9 +24,47 @@ function htmlResponse(html) {
       "Content-Type": "text/html; charset=utf-8",
       "Cache-Control": "no-store",
       "X-Robots-Tag": "noindex, nofollow, noarchive",
+      "X-Content-Type-Options": "nosniff",
     },
     body: html,
   };
+}
+
+function lockedResponse() {
+  const mailto = `mailto:${SUPPORT_EMAIL}`;
+  const page = `<!doctype html>
+<html lang="${LANG}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Access required — Prosper Factory</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      :root{color-scheme:dark;--bg:#070707;--panel:#111;--accent:#d4af37;--text:#f5f5f5;--muted:#b9b9b9}
+      body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px}
+      main{max-width:720px;width:100%;background:linear-gradient(180deg,rgba(17,17,17,.9),rgba(8,8,8,.9));border:1px solid rgba(212,175,55,.25);border-radius:18px;padding:28px 24px;box-shadow:0 24px 70px rgba(0,0,0,.6)}
+      h1{margin:0 0 10px;font-size:1.7rem}
+      p{margin:0 0 14px;color:var(--muted);line-height:1.55}
+      .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+      a.btn{display:inline-block;background:var(--accent);color:#1a1305;text-decoration:none;font-weight:700;padding:12px 16px;border-radius:999px}
+      a.ghost{display:inline-block;border:1px solid rgba(212,175,55,.35);color:var(--text);text-decoration:none;font-weight:700;padding:12px 16px;border-radius:999px}
+      .fine{font-size:.92rem}
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Access required</h1>
+      <p>This page is available after payment. Please open it from your Stripe confirmation link (it contains the session token).</p>
+      <div class="actions">
+        <a class="btn" href="${CHECKOUT_FALLBACK}" rel="nofollow">Go to checkout</a>
+        <a class="ghost" href="${mailto}" rel="nofollow">Contact support</a>
+      </div>
+      <p class="fine"><a href="${HOME_FALLBACK}" rel="nofollow" style="color:var(--accent);text-decoration:none">Back to homepage</a></p>
+    </main>
+  </body>
+</html>`;
+
+  return htmlResponse(page);
 }
 
 async function stripeGet(path, stripeSecretKey) {
@@ -99,17 +140,21 @@ exports.handler = async (event) => {
     };
   }
 
+  const query = event.queryStringParameters || {};
   const sessionIdRaw =
-    event.queryStringParameters && event.queryStringParameters.session_id;
+    query.session_id ||
+    query.sessionId ||
+    query.checkout_session_id ||
+    query.checkoutSessionId;
   const sessionId = String(sessionIdRaw || "").trim();
-  if (!sessionId || !sessionId.startsWith("cs_")) {
-    return notFound();
+  if (!sessionId || !/^cs_[a-zA-Z0-9_]+$/.test(sessionId)) {
+    return lockedResponse();
   }
 
   try {
     const ok = await isPaidSessionForProduct(sessionId);
     if (!ok) {
-      return notFound();
+      return lockedResponse();
     }
 
     const downloadUrl = `/.netlify/functions/download?lang=${LANG}&session_id=${encodeURIComponent(
@@ -150,7 +195,6 @@ exports.handler = async (event) => {
 
     return htmlResponse(page);
   } catch {
-    return notFound();
+    return lockedResponse();
   }
 };
-

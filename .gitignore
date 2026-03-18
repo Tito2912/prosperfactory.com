@@ -14,3 +14,14 @@ ahrefs_report/
 lh-*.json
 pf-*.json
 psi-*.json
+
+# Local static export artifacts
+/*.html
+/brokers/
+/crypto/
+/de/
+/es/
+/fr/
+/starter/
+/tools/
+/*.zip

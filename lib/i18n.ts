@@ -18,11 +18,11 @@ export const LEGAL_SLUGS: Record<SupportedLocale, { legal: string; privacy: stri
   de: { legal: 'mentions-legales', privacy: 'datenschutzerklaerung' },
 };
 
-export const TRUST_SLUGS: Record<SupportedLocale, { about: string; contact: string }> = {
-  en: { about: 'about', contact: 'contact' },
-  fr: { about: 'a-propos', contact: 'contact' },
-  es: { about: 'sobre', contact: 'contacto' },
-  de: { about: 'uber-uns', contact: 'kontakt' },
+export const TRUST_SLUGS: Record<SupportedLocale, { about: string; contact: string; methodology: string; sources: string }> = {
+  en: { about: 'about', contact: 'contact', methodology: 'methodology', sources: 'sources' },
+  fr: { about: 'a-propos', contact: 'contact', methodology: 'methodologie', sources: 'sources' },
+  es: { about: 'sobre', contact: 'contacto', methodology: 'metodologia', sources: 'fuentes' },
+  de: { about: 'uber-uns', contact: 'kontakt', methodology: 'methodik', sources: 'quellen' },
 };
 
 export function pageHref(locale: SupportedLocale, slugPath: string): string {
@@ -36,7 +36,9 @@ export function legalHref(locale: SupportedLocale, key: 'legal' | 'privacy'): st
   return pageHref(locale, LEGAL_SLUGS[locale][key]);
 }
 
-export function trustHref(locale: SupportedLocale, key: 'about' | 'contact'): string {
+export type TrustKey = keyof (typeof TRUST_SLUGS)['en'];
+
+export function trustHref(locale: SupportedLocale, key: TrustKey): string {
   return pageHref(locale, TRUST_SLUGS[locale][key]);
 }
 

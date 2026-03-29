@@ -62,6 +62,12 @@ export function SiteFooter() {
         <a href={legalHref(locale, 'privacy')}>{labels[locale].privacy}</a> •{' '}
         <a href={pageHref(locale, 'disclaimer')}>{labels[locale].disclaimer}</a> •{' '}
         <a href={pageHref(locale, 'affiliate-disclosure')}>{labels[locale].affiliate}</a>
+        {locale === 'fr' ? (
+          <>
+            {' '}
+            • <a href={pageHref(locale, 'guides/compte-nickel')}>Nickel</a>
+          </>
+        ) : null}
       </div>
     </footer>
   );

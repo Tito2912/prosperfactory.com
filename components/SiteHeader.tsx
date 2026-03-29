@@ -14,6 +14,7 @@ export function SiteHeader() {
   const guidesLabel = locale === 'es' ? 'Guías' : locale === 'de' ? 'Leitfäden' : 'Guides';
   const comparisonsLabel = locale === 'fr' ? 'Comparatifs' : locale === 'es' ? 'Comparativas' : locale === 'de' ? 'Vergleiche' : 'Comparisons';
   const affiliateLabel = locale === 'fr' ? 'Affiliation' : locale === 'es' ? 'Afiliación' : locale === 'de' ? 'Affiliate' : 'Affiliate';
+  const nickelHref = pageHref(locale, 'guides/compte-nickel');
 
   return (
     <header className="header">
@@ -32,6 +33,7 @@ export function SiteHeader() {
           <Link href={pageHref(locale, 'tools/tradingview')}>TradingView</Link>
           <Link href={pageHref(locale, 'crypto/bitpanda')}>Bitpanda</Link>
           <Link href={pageHref(locale, 'brokers/etoro')}>eToro</Link>
+          {locale === 'fr' ? <Link href={nickelHref}>Nickel</Link> : null}
           {showSeoNav ? <Link href={pageHref(locale, 'guides')}>{guidesLabel}</Link> : null}
           {showSeoNav ? (
             <Link href={pageHref(locale, comparisonsSlug)}>{comparisonsLabel}</Link>

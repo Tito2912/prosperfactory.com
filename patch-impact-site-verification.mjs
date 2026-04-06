@@ -26,15 +26,25 @@ async function listHtmlFiles(dir) {
 function patchImpactMeta(html) {
   const metaTagRegex = /<meta\b[^>]*\bname=["']impact-site-verification["'][^>]*>/gi;
 
-  return html.replace(metaTagRegex, (tag) => {
-    if (/\bvalue=/.test(tag)) return tag;
+  let verificationId;
 
-    const contentMatch = tag.match(/\bcontent=["']([^"']+)["']/i);
-    if (!contentMatch) return tag;
-
-    const contentValue = contentMatch[1];
-    return tag.replace(/\bname=(["'])impact-site-verification\1/i, (match) => `${match} value="${contentValue}"`);
+  // Remove all existing tags and capture the ID (from `value` or `content`).
+  const stripped = html.replace(metaTagRegex, (tag) => {
+    if (!verificationId) {
+      const match =
+        tag.match(/\bvalue=["']([^"']+)["']/i) ?? tag.match(/\bcontent=["']([^"']+)["']/i) ?? null;
+      if (match?.[1]) verificationId = match[1];
+    }
+    return '';
   });
+
+  if (!verificationId) return html;
+
+  // Impact's UI snippet uses single quotes and `value=` (not `content=`), and their docs ask for it to be the first meta tag.
+  const canonicalTag = `<meta name='impact-site-verification' value='${verificationId}'>`;
+
+  // Insert right after the opening <head> tag so it's guaranteed to be the first <meta>.
+  return stripped.replace(/<head\b[^>]*>/i, (headOpen) => `${headOpen}${canonicalTag}`);
 }
 
 async function main() {

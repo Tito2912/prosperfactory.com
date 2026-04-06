@@ -40,9 +40,8 @@ function patchImpactMeta(html) {
 
   if (!verificationId) return html;
 
-  // Keep both `value` (Impact UI) and `content` (common verification meta format) for maximum compatibility.
-  // Place it as the very first <meta> in <head>.
-  const canonicalTag = `<meta name='impact-site-verification' value='${verificationId}' content='${verificationId}'>`;
+  // Use the exact format Impact provides (`name` + `value`) and place it as the very first <meta> in <head>.
+  const canonicalTag = `<meta name='impact-site-verification' value='${verificationId}'>`;
 
   // Insert right after the opening <head> tag so it's guaranteed to be the first <meta>.
   return stripped.replace(/<head\b[^>]*>/i, (headOpen) => `${headOpen}${canonicalTag}`);

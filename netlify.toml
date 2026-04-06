@@ -13,13 +13,7 @@
 
 [[redirects]]
   from = "http://www.prosperfactory.com/*"
-  to = "https://prosperfactory.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.prosperfactory.com/*"
-  to = "https://prosperfactory.com/:splat"
+  to = "https://www.prosperfactory.com/:splat"
   status = 301
   force = true
 
@@ -31,7 +25,7 @@
 [[headers]]
   for = "/*.html"
   [headers.values]
-    Cache-Control = "public, max-age=600, must-revalidate"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 # --- Ajout pour garantir l'accès Bing au sitemap/robots ---
 [[headers]]

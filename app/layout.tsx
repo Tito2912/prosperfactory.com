@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   description: 'Educational content about markets and tools to build long-term financial autonomy.',
   metadataBase: new URL('https://prosperfactory.com'),
   alternates: { canonical: '/' },
+  other: {
+    'impact-site-verification': 'efca47b0-1927-4a00-a755-bc19104ef655',
+  },
   manifest: '/site.webmanifest',
   icons: {
     icon: [

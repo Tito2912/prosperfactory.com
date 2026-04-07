@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://prosperfactory.com'),
   alternates: { canonical: '/' },
   other: {
-    'impact-site-verification': 'bee10bc5-11eb-4eaf-a83f-5d66dcb1b6cc',
+    'impact-site-verification': 'a37b565e-1974-479b-b8c7-6c0b560bff3b',
   },
   manifest: '/site.webmanifest',
   icons: {

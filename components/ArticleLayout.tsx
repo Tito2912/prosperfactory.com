@@ -15,7 +15,42 @@ const copy = {
 export function ArticleLayout({ post, locale = 'en' }: { post: Post; locale?: SupportedLocale }) {
   const t = copy[locale];
   const dateLocale = intlLocale(locale);
+  const showEtoroBanner = post.slug.toLowerCase().includes('etoro');
   const showTradingViewBanner = post.slug.toLowerCase().includes('tradingview');
+  const etoroBanner: Record<SupportedLocale, { href: string; src: string; width: number; height: number; ariaLabel: string; alt: string }> = {
+    fr: {
+      href: 'https://med.etoro.com/B21618_A126072_TClick.aspx',
+      src: 'https://med.etoro.com/B21618_A126072_TGet.aspx',
+      width: 970,
+      height: 250,
+      ariaLabel: 'Ouvrir eToro (bannière sponsorisée)',
+      alt: 'eToro',
+    },
+    en: {
+      href: 'https://med.etoro.com/B21391_A126072_TClick.aspx',
+      src: 'https://med.etoro.com/B21391_A126072_TGet.aspx',
+      width: 728,
+      height: 90,
+      ariaLabel: 'Open eToro (sponsored banner)',
+      alt: 'eToro',
+    },
+    es: {
+      href: 'https://med.etoro.com/B21706_A126072_TClick.aspx',
+      src: 'https://med.etoro.com/B21706_A126072_TGet.aspx',
+      width: 970,
+      height: 250,
+      ariaLabel: 'Abrir eToro (banner patrocinado)',
+      alt: 'eToro',
+    },
+    de: {
+      href: 'https://med.etoro.com/B21035_A126072_TClick.aspx',
+      src: 'https://med.etoro.com/B21035_A126072_TGet.aspx',
+      width: 970,
+      height: 250,
+      ariaLabel: 'eToro öffnen (gesponsertes Banner)',
+      alt: 'eToro',
+    },
+  };
   const tradingViewAriaLabel: Record<SupportedLocale, string> = {
     en: 'Open TradingView (sponsored banner)',
     fr: 'Ouvrir TradingView (bannière sponsorisée)',
@@ -59,6 +94,27 @@ export function ArticleLayout({ post, locale = 'en' }: { post: Post; locale?: Su
                   <li key={x}>{x}</li>
                 ))}
               </ul>
+            </section>
+          ) : null}
+
+          {showEtoroBanner ? (
+            <section aria-label="eToro banner" className="card">
+              <a
+                aria-label={etoroBanner[locale].ariaLabel}
+                href={etoroBanner[locale].href}
+                rel="sponsored nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  src={etoroBanner[locale].src}
+                  alt={etoroBanner[locale].alt}
+                  width={etoroBanner[locale].width}
+                  height={etoroBanner[locale].height}
+                  loading="lazy"
+                  decoding="async"
+                  style={{ display: 'block', maxWidth: '100%', height: 'auto', border: 0 }}
+                />
+              </a>
             </section>
           ) : null}
 

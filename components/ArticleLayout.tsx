@@ -15,6 +15,13 @@ const copy = {
 export function ArticleLayout({ post, locale = 'en' }: { post: Post; locale?: SupportedLocale }) {
   const t = copy[locale];
   const dateLocale = intlLocale(locale);
+  const showTradingViewBanner = post.slug.toLowerCase().includes('tradingview');
+  const tradingViewAriaLabel: Record<SupportedLocale, string> = {
+    en: 'Open TradingView (sponsored banner)',
+    fr: 'Ouvrir TradingView (bannière sponsorisée)',
+    es: 'Abrir TradingView (banner patrocinado)',
+    de: 'TradingView öffnen (gesponsertes Banner)',
+  };
 
   return (
     <article className="article stack">
@@ -52,6 +59,27 @@ export function ArticleLayout({ post, locale = 'en' }: { post: Post; locale?: Su
                   <li key={x}>{x}</li>
                 ))}
               </ul>
+            </section>
+          ) : null}
+
+          {showTradingViewBanner ? (
+            <section aria-label="TradingView banner" className="card">
+              <a
+                aria-label={tradingViewAriaLabel[locale]}
+                href="https://www.awin1.com/cread.php?s=4612099&v=117793&q=590384&r=2738708"
+                rel="sponsored nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="https://www.awin1.com/cshow.php?s=4612099&v=117793&q=590384&r=2738708"
+                  alt="TradingView"
+                  width="936"
+                  height="120"
+                  loading="lazy"
+                  decoding="async"
+                  style={{ display: 'block', maxWidth: '100%', height: 'auto', border: 0 }}
+                />
+              </a>
             </section>
           ) : null}
 

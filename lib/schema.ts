@@ -7,6 +7,17 @@ export function buildArticleJsonLd(post: Post) {
   const published = post.date ?? post.updatedAt ?? new Date().toISOString();
   const modified = post.updatedAt ?? published;
 
+  if (post.type === 'page') {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: post.title,
+      description: post.description,
+      url,
+      dateModified: modified,
+    };
+  }
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',

@@ -109,9 +109,12 @@ export async function buildAlternatesForSlugPath({
     const index = await getTranslationIndex();
     const entry = index.get(currentFm.translationKey);
     if (entry && Object.keys(entry).length) {
+      const languagesWithDefault = { ...(entry as Record<string, string>) };
+      const defaultHref = languagesWithDefault['en'] ?? Object.values(languagesWithDefault)[0];
+      if (defaultHref) languagesWithDefault['x-default'] = defaultHref;
       return {
         canonical,
-        languages: entry as Record<string, string>,
+        languages: languagesWithDefault,
       };
     }
   }
@@ -123,6 +126,11 @@ export async function buildAlternatesForSlugPath({
     if (!(await exists(filePath))) continue;
     const fm = await readFrontmatterFromMdx(filePath);
     languages[l] = fm?.canonical ?? buildDefaultCanonical(l, slugPath);
+  }
+
+  if (Object.keys(languages).length) {
+    const defaultHref = languages['en'] ?? Object.values(languages)[0];
+    if (defaultHref) languages['x-default'] = defaultHref;
   }
 
   return {

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node patch-impact-site-verification.mjs",
+    "build": "next build && node patch-impact-site-verification.mjs && node scripts/fix-html-lang.mjs",
     "start": "next start",
     "lint": "next lint"
   },

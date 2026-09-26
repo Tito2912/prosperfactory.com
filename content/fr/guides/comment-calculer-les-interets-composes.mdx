@@ -1,0 +1,154 @@
+---
+title: "Comment calculer les intérêts composés (méthode et exemples)"
+description: "Guide pour calculer les intérêts composés : formule, fréquence de capitalisation, versements réguliers et exemples chiffrés (contenu informatif)."
+updatedAt: "2026-03-22"
+translationKey: "guides/how-to-calculate-compound-interest"
+type: "guide"
+primaryKeyword: "calculer intérêts composés"
+jumpLinks:
+  - href: "#idee-de-base"
+    label: "Idée de base"
+  - href: "#la-formule"
+    label: "La formule"
+  - href: "#etape-par-etape"
+    label: "Étape par étape"
+  - href: "#frequence-de-capitalisation"
+    label: "Fréquence"
+  - href: "#versements-reguliers"
+    label: "Versements"
+  - href: "#exemples-chiffres"
+    label: "Exemples"
+  - href: "#inflation-et-frais"
+    label: "Inflation & frais"
+  - href: "#erreurs-frequentes"
+    label: "Erreurs"
+  - href: "#checklist"
+    label: "Checklist"
+quickAnswer:
+  - "Formule de base : capital final = capital × (1 + taux/n)^(n×années)."
+  - "Le “composé” vient du fait que les intérêts génèrent à leur tour des intérêts."
+  - "Plus la durée est longue, plus l’effet est fort : le temps est la variable clé."
+  - "Pensez à retrancher frais et inflation pour un rendement réel réaliste."
+cta:
+  title: "Mettre l’effet composé en pratique"
+  body: "Le DCA (versements réguliers) est une façon simple de laisser jouer le temps. Voici comment l’aborder."
+  buttonLabel: "Lire le guide DCA crypto"
+  buttonHref: "/fr/guides/dca-crypto/"
+internalLinks:
+  - href: "/fr/guides/dca-crypto/"
+    anchor: "Guide : DCA crypto"
+  - href: "/fr/guides/debuter-investissement/"
+    anchor: "Guide : débuter l’investissement"
+  - href: "/fr/guides/comment-choisir-une-plateforme/"
+    anchor: "Guide : comment choisir une plateforme"
+  - href: "/fr/comparatifs/etoro-vs-bitpanda/"
+    anchor: "Comparatif : eToro vs Bitpanda"
+  - href: "/fr/disclaimer/"
+    anchor: "Lire l’avertissement"
+faq:
+  - q: "Quelle est la différence entre intérêts simples et composés ?"
+    a: "Les intérêts simples se calculent toujours sur le capital de départ. Les intérêts composés se calculent sur le capital plus les intérêts déjà accumulés, ce qui accélère la croissance dans le temps."
+  - q: "Que signifie la fréquence de capitalisation ?"
+    a: "C’est le nombre de fois par an où les intérêts sont ajoutés au capital. Plus elle est élevée (mensuelle, quotidienne), plus le montant final est légèrement supérieur à taux annuel égal."
+  - q: "Comment intégrer des versements réguliers ?"
+    a: "On additionne le capital initial capitalisé et chaque versement capitalisé sur sa durée restante. Un tableur ou une calculatrice d’épargne fait ce calcul automatiquement."
+  - q: "Un rendement passé garantit-il ce calcul ?"
+    a: "Non. Les taux et rendements varient, surtout sur les actifs volatils. Le calcul est une projection hypothétique, pas une promesse."
+  - q: "Faut-il calculer en rendement brut ou net ?"
+    a: "Idéalement en net : retranchez les frais et, pour un ordre de grandeur réaliste, tenez compte de l’inflation pour obtenir un rendement réel."
+  - q: "Existe-t-il une règle rapide pour estimer le doublement ?"
+    a: "La règle de 72 : divisez 72 par le taux annuel en pourcentage pour estimer les années nécessaires pour doubler un capital. À 6 %, cela donne environ 12 ans."
+---
+
+## Idée de base
+
+Les intérêts composés désignent le fait que les intérêts d’une période s’ajoutent au capital, puis produisent à leur tour des intérêts la période suivante. C’est un effet “boule de neige” :
+
+- les intérêts simples portent toujours sur le **capital initial** ;
+- les intérêts composés portent sur le **capital + intérêts déjà accumulés**.
+
+Deux leviers dominent le résultat :
+
+- **la durée** (plus l’horizon est long, plus l’effet s’amplifie) ;
+- **le taux** (même un écart faible compte beaucoup sur 20–30 ans).
+
+## La formule
+
+La formule générale pour un capital placé sans versements :
+
+> **Capital final = C × (1 + t/n)^(n × a)**
+
+Avec :
+
+- **C** = capital initial
+- **t** = taux annuel (en décimal, ex. 0,06 pour 6 %)
+- **n** = nombre de capitalisations par an
+- **a** = nombre d’années
+
+Si la capitalisation est annuelle (n = 1), la formule se simplifie en **C × (1 + t)^a**.
+
+## Étape par étape
+
+1. Convertissez le taux en décimal (5 % → 0,05).
+2. Choisissez la fréquence de capitalisation (annuelle, mensuelle…).
+3. Calculez **t/n** puis ajoutez 1.
+4. Élevez le résultat à la puissance **n × a**.
+5. Multipliez par le capital initial.
+
+Exemple minimal : 1 000 € à 5 % annuel pendant 3 ans → 1 000 × (1,05)^3 ≈ **1 157,63 €**.
+
+## Fréquence de capitalisation
+
+À taux annuel identique, une capitalisation plus fréquente donne un montant final légèrement supérieur :
+
+- **annuelle** : n = 1
+- **trimestrielle** : n = 4
+- **mensuelle** : n = 12
+- **quotidienne** : n = 365
+
+L’écart reste modeste pour de courtes durées, mais devient visible sur de longs horizons. Vérifiez toujours quelle fréquence votre produit ou votre simulateur utilise.
+
+## Versements réguliers
+
+Dans la vraie vie, on ajoute souvent un montant fixe chaque mois. Le calcul devient :
+
+- le **capital initial** capitalisé sur toute la durée ;
+- **plus** chaque versement capitalisé sur sa durée restante.
+
+À la main, c’est fastidieux. Un tableur (fonction de valeur future) ou une calculatrice d’épargne fait ce calcul instantanément. L’important est de comprendre que chaque versement démarre son propre “compte à rebours” de capitalisation.
+
+## Exemples chiffrés
+
+Capital initial 5 000 €, taux annuel 6 %, capitalisation annuelle :
+
+- **10 ans** : 5 000 × (1,06)^10 ≈ **8 954 €**
+- **20 ans** : 5 000 × (1,06)^20 ≈ **16 036 €**
+- **30 ans** : 5 000 × (1,06)^30 ≈ **28 717 €**
+
+On voit que le gain sur la dernière décennie dépasse largement celui de la première : c’est la signature de l’effet composé.
+
+## Inflation et frais
+
+Un calcul “brut” peut donner une image trop optimiste. Pour un ordre de grandeur réaliste :
+
+- retranchez les **frais** (courtage, gestion, spreads) au taux ;
+- tenez compte de l’**inflation** pour raisonner en rendement réel.
+
+Exemple : 6 % de rendement, 1 % de frais et 2 % d’inflation laissent environ **3 %** de rendement réel net. C’est ce chiffre qui reflète votre pouvoir d’achat futur.
+
+## Erreurs fréquentes
+
+- **Confondre taux simple et composé** dans un simulateur.
+- **Oublier la fréquence de capitalisation** et comparer des chiffres non comparables.
+- **Raisonner en brut** en ignorant frais et inflation.
+- **Extrapoler un rendement passé** comme s’il était garanti.
+
+## Checklist
+
+- [ ] Taux converti en décimal
+- [ ] Fréquence de capitalisation identifiée
+- [ ] Durée et versements clairement définis
+- [ ] Frais retranchés
+- [ ] Inflation prise en compte pour le rendement réel
+
+Ce contenu est informatif et ne constitue pas un conseil en investissement. Les rendements ne sont pas garantis. Pour en savoir plus, consultez notre [avertissement](/fr/disclaimer/).

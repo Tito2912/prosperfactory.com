@@ -1,0 +1,156 @@
+---
+title: "Comment calculer les intérêts composés (méthode et exemples)"
+description: "Comprendre et calculer les intérêts composés : formule, exemples chiffrés, effet du temps et des versements réguliers (contenu informatif)."
+updatedAt: "2026-03-22"
+translationKey: "guides/how-to-calculate-compound-interest"
+type: "guide"
+primaryKeyword: "calculer intérêts composés"
+jumpLinks:
+  - href: "#definition"
+    label: "Définition"
+  - href: "#la-formule-de-base"
+    label: "La formule"
+  - href: "#exemple-simple"
+    label: "Exemple simple"
+  - href: "#frequence-de-capitalisation"
+    label: "Fréquence"
+  - href: "#versements-reguliers"
+    label: "Versements réguliers"
+  - href: "#effet-du-temps"
+    label: "Effet du temps"
+  - href: "#inflation-et-frais"
+    label: "Inflation & frais"
+  - href: "#checklist"
+    label: "Checklist"
+  - href: "#erreurs-frequentes"
+    label: "Erreurs"
+quickAnswer:
+  - "Formule de base : capital final = capital initial × (1 + taux) puissance nombre de périodes."
+  - "Les intérêts composés génèrent des intérêts sur les intérêts déjà acquis."
+  - "Le temps et la régularité pèsent souvent plus que le taux lui-même."
+  - "Attention : frais et inflation réduisent le rendement réel."
+cta:
+  title: "Mettre en place une routine simple"
+  body: "Les intérêts composés récompensent la régularité. Découvrez comment investir un montant fixe à intervalle régulier."
+  buttonLabel: "Lire le guide DCA crypto"
+  buttonHref: "/fr/guides/dca-crypto/"
+internalLinks:
+  - href: "/fr/guides/dca-crypto/"
+    anchor: "Guide : DCA crypto"
+  - href: "/fr/guides/debuter-investissement/"
+    anchor: "Guide : débuter l’investissement"
+  - href: "/fr/guides/comment-choisir-une-plateforme/"
+    anchor: "Guide : comment choisir une plateforme"
+  - href: "/fr/comparatifs/etoro-vs-bitpanda/"
+    anchor: "Comparatif : eToro vs Bitpanda"
+  - href: "/fr/disclaimer/"
+    anchor: "Lire l’avertissement"
+faq:
+  - q: "Quelle est la différence entre intérêts simples et composés ?"
+    a: "Les intérêts simples se calculent toujours sur le capital initial. Les intérêts composés se calculent sur le capital initial plus les intérêts déjà générés, ce qui accélère la croissance dans le temps."
+  - q: "Le taux ou le temps compte-t-il le plus ?"
+    a: "Les deux comptent, mais le temps a un effet non linéaire : plus la durée est longue, plus l’effet composé devient important, souvent plus qu’un léger écart de taux."
+  - q: "Comment intégrer des versements réguliers au calcul ?"
+    a: "On additionne la valeur future du capital initial et la valeur future de la série de versements. Un tableur ou une calculatrice financière facilite ce calcul."
+  - q: "Faut-il raisonner en taux annuel ou périodique ?"
+    a: "Il faut aligner le taux et le nombre de périodes. Si vous capitalisez mensuellement, utilisez un taux périodique mensuel et le nombre total de mois."
+  - q: "Les intérêts composés garantissent-ils un gain ?"
+    a: "Non. La formule suppose un taux constant. Dans la réalité, les rendements varient, peuvent être négatifs, et dépendent du produit et du risque."
+  - q: "Comment tenir compte de l’inflation ?"
+    a: "On raisonne en rendement réel : rendement nominal moins inflation. L’inflation réduit le pouvoir d’achat du capital final, même si le montant nominal augmente."
+---
+
+## Définition
+
+Les **intérêts composés** désignent le fait de générer des intérêts non seulement sur votre capital de départ, mais aussi sur les intérêts déjà accumulés. Chaque période, la base de calcul augmente.
+
+À l’inverse, les **intérêts simples** se calculent toujours sur le seul capital initial. C’est cette différence qui explique l’effet « boule de neige » sur le long terme.
+
+## La formule de base
+
+La formule la plus courante est :
+
+> **Capital final = Capital initial × (1 + taux périodique) ^ nombre de périodes**
+
+Avec :
+
+- **Capital initial** : le montant investi au départ
+- **taux périodique** : le taux d’intérêt pour une période (ex. mensuel ou annuel)
+- **nombre de périodes** : le nombre total de périodes de capitalisation
+
+Point clé : le **taux** et le **nombre de périodes** doivent être exprimés dans la même unité de temps.
+
+## Exemple simple
+
+Prenons **1 000 €** placés à **5 % par an** pendant **3 ans**, capitalisation annuelle :
+
+- Année 1 : 1 000 × 1,05 = **1 050 €**
+- Année 2 : 1 050 × 1,05 = **1 102,50 €**
+- Année 3 : 1 102,50 × 1,05 = **1 157,63 €**
+
+Avec des **intérêts simples**, on aurait eu 1 000 + (1 000 × 5 % × 3) = **1 150 €**. La différence (7,63 €) vient des intérêts qui produisent eux-mêmes des intérêts.
+
+## Fréquence de capitalisation
+
+Plus la capitalisation est fréquente, plus l’effet composé s’accentue (à taux annuel égal).
+
+- **Annuelle** : intérêts ajoutés une fois par an
+- **Mensuelle** : taux annuel ÷ 12, sur 12 × nombre d’années
+- **Quotidienne** : taux annuel ÷ 365
+
+Pour une capitalisation mensuelle à 5 % annuel sur 3 ans :
+
+> 1 000 × (1 + 0,05/12) ^ (12 × 3) ≈ **1 161,47 €**
+
+Soit un peu plus qu’en capitalisation annuelle, pour le même taux affiché.
+
+## Versements réguliers
+
+Dans la pratique, on ajoute souvent un **versement régulier** (mensuel par exemple). Le capital final devient la somme de deux composantes :
+
+- la valeur future du **capital initial**
+- la valeur future de la **série de versements**
+
+La valeur future d’une série de versements se calcule ainsi :
+
+> **Versement × [ ((1 + taux périodique) ^ n − 1) ÷ taux périodique ]**
+
+Un **tableur** est ici le plus pratique : une colonne par période, avec ajout du versement puis application du taux à chaque ligne.
+
+## Effet du temps
+
+Le temps est le facteur le plus sous-estimé. À taux et versement identiques, une durée plus longue change fortement le résultat, car les intérêts s’empilent sur une base de plus en plus grande.
+
+Quelques repères utiles à garder en tête :
+
+- doubler la durée fait **bien plus que doubler** les intérêts cumulés
+- commencer tôt compense souvent un taux légèrement inférieur
+- interrompre puis reprendre casse la dynamique de capitalisation
+
+## Inflation et frais
+
+La formule suppose un taux constant et net, ce qui est rarement le cas dans la réalité.
+
+- **Frais** : ils réduisent le taux effectif chaque période et se composent aussi, à votre défaveur.
+- **Inflation** : raisonnez en **rendement réel** (nominal − inflation) pour évaluer le pouvoir d’achat.
+- **Impôts** : selon le produit et la juridiction, une partie des gains peut être imposée.
+
+Un capital final « nominal » impressionnant peut donc représenter un gain réel plus modeste.
+
+## Checklist
+
+- Aligner le **taux** et le **nombre de périodes** sur la même unité de temps.
+- Choisir la bonne **fréquence de capitalisation**.
+- Intégrer les **versements réguliers** si vous en prévoyez.
+- Retirer les **frais** du taux effectif.
+- Comparer en **rendement réel** (net d’inflation) pour rester lucide.
+
+## Erreurs fréquentes
+
+- **Confondre taux annuel et périodique** : diviser le taux annuel par le nombre de périodes.
+- **Ignorer les frais** : ils se composent aussi et rognent le résultat.
+- **Supposer un taux fixe** : les rendements réels varient et peuvent être négatifs.
+- **Oublier l’inflation** : le montant nominal peut masquer une perte de pouvoir d’achat.
+- **Surestimer un taux élevé** : un rendement très élevé implique généralement un risque élevé.
+
+Ce contenu est **informatif** et ne constitue pas un conseil en investissement. Pour comprendre les limites et les risques, lisez notre [avertissement](/fr/disclaimer/).
